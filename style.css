@@ -8,10 +8,10 @@
 .first {
     width: 100%;
     height: 100vh;
-    background-image: url("img/kul.jpg");
+    background-image: url("img/bg2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 0;
     background-attachment: fixed;
     font-family: sans-serif;
     position: relative;
@@ -61,7 +61,8 @@ p.two {
     overflow-y: hidden;
     width: 80%;
     /*height: 520px;*/
-    background: rgba(37, 52, 95, 0.83);
+    /*background: rgba(37, 52, 95, 0.83);*/
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     box-sizing: border-box;
     padding: 70px 30px;
