@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+.first {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/kul.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.secound {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    background: rgba(37, 52, 95, 0.83);
+    width: 100%;
+    display: inline-block;
+    margin: 70% auto 0 auto;
+    text-align: left;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+p.one{
+    margin: 0 auto;
+    padding:0;
+}
+
+p.two {
+    margin: 0 auto;
+    font-size: 60px;
+}
+
+.line-one {
+    margin: 0;
+    padding: 0
+}
+
+.line-two {
+
+    font-weight: bold;
+}
+
+.form-box {
+    display: block;
+    margin: 15% auto 0 auto;
+    overflow-y: hidden;
+    width: 80%;
+    /*height: 520px;*/
+    background: rgba(37, 52, 95, 0.83);
+    color: #fff;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.form-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.form-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-box input[type="text"] {
+
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.form-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .name {
+        font-size: 20px;
+    }
+    p.two{
+        font-size: 37.5px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .name {
+        margin: 10% auto 0 auto;
+    }
+}
+
