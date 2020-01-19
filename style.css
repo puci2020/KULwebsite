@@ -3,7 +3,23 @@
     padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
+
 }
+
+/*===Hide scrollbar===*/
+body::-webkit-scrollbar {
+    width: 0 !important
+}
+
+body {
+    overflow: -moz-scrollbars-none;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+
+/*===Hide scrollbar===*/
 
 .first {
     width: 100%;
@@ -17,6 +33,7 @@
     position: relative;
 }
 
+
 .secound {
     background-image: url("img/bg.jpg");
     overflow: hidden;
@@ -26,8 +43,10 @@
 }
 
 .boxes {
+    margin: 0;
     padding: 30px 0;
     text-align: center;
+    border: 1px solid black;
 }
 
 .name {
@@ -44,24 +63,12 @@
     text-shadow: .1rem .1rem .8rem black;
 }
 
-p.one {
-    margin: 0 auto;
-    padding: 0;
+.content{
+    height: 100vh;
 }
 
-p.two {
-    margin: 0 auto;
-    font-size: 60px;
-}
-
-.line-one {
-    margin: 0;
-    padding: 0
-}
-
-.line-two {
-
-    font-weight: bold;
+.content .row{
+    height: 50%;
 }
 
 .form-box {
@@ -150,7 +157,7 @@ p.two {
     color: #000;
 }
 
-
+/*===ScrollBack button===*/
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -162,27 +169,27 @@ p.two {
     background: rgba(37, 52, 95, 0.83);
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 10px; /* Some padding */
     border-radius: 50%; /* Rounded corners */
-    font-size: 22px; /* Increase font size */
-    width: 70px;
-    height: 70px;
+    /*font-size: 22px; !* Increase font size *!*/
+    width: 50px;
+    height: 50px;
 }
-
 
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
 
+/*===ScrollBack button===*/
 
 @media only screen and (max-width: 454px) {
-    .form-box{
+    .form-box {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 374px) {
-    .caption h1{
+    .caption h1 {
         font-size: 2.5rem;
     }
 }

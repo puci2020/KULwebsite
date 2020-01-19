@@ -53,20 +53,25 @@
     <a class="btn btn-outline-light btn-lg animated bounceInDown" style="animation-delay: 1.3s" href="#sec-1">ZAPISZ SIĘ</a>
 </div>
 
-<div class="container">
+<div class="container content" id="sec-1">
     <div class="row">
-        <div class="col-sm-12 col-md-4 boxes">
+        <div class="col-sm-12 col-md-6 boxes">
             alskdaslkdj
         </div>
-        <div class="col-sm-12 col-md-4 boxes">
+        <div class="col-sm-12 col-md-6 boxes">
             alskdaslkdj
         </div>
-        <div class="col-sm-12 col-md-4 boxes">
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 boxes">
+            alskdaslkdj
+        </div>
+        <div class="col-sm-12 col-md-6 boxes">
             alskdaslkdj
         </div>
     </div>
 </div>
-<div class="first secound" id="sec-1">
+<div class="first secound" id="sec-2">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col">
