@@ -64,11 +64,28 @@ body {
 }
 
 .content{
+    background-color: #fbfbfb;
     height: 100vh;
+    padding-bottom: 50px;
+}
+
+.container{
+    height: 100%;
+}
+
+.content h2{
+    overflow: hidden;
 }
 
 .content .row{
     height: 50%;
+}
+
+.content .title{
+    position: relative;
+    text-align: center;
+    height: 200px;
+    padding: 70px;
 }
 
 .form-box {
