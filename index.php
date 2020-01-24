@@ -79,7 +79,7 @@
 </div>
 <div class="first secound" id="sec-2">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
             <div class="col">
                 <div class="form-box">
                     <h1>Zapisz się</h1>
