@@ -20,31 +20,6 @@
 <body>
 
 <div class="first">
-    <!--    <div class="container">-->
-    <!--        <div class="row justify-content-center">-->
-    <!--            <div class="col-md-6 col-sm-12">-->
-    <!--                <div class="name">-->
-    <!--                    <p class="one animated bounceInUp" style="animation-delay: .5s">ZJAZD ABSOLWENTÓW</br></p>-->
-    <!--                        <p class="two animated bounceInUp" style="animation-delay: .8s">PSYCHOLOGII</p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="col-md-6 col-sm-12">-->
-    <!--                <div class="form-box animated fadeIn" style="animation-delay: 1.5s">-->
-    <!--                    <h1>Zapisz się</h1>-->
-    <!--                    <form>-->
-    <!--                        <label>Imię</label>-->
-    <!--                        <input type="text" name="firstName" id="firstName" placeholder="Podaj imię">-->
-    <!--                        <label>Nazwisko</label>-->
-    <!--                        <input type="text" name="lastName" id="lastName" placeholder="Podaj nazwisko">-->
-    <!--                        <label>E-mail</label>-->
-    <!--                        <input type="text" name="email" id="email" placeholder="Podaj email">-->
-    <!---->
-    <!--                        <input type="submit" name="submit" id="submit" value="Zapisz">-->
-    <!--                    </form>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
 </div>
 
 <div class="caption text-center col">
@@ -54,6 +29,7 @@
     <a class="btn btn-outline-light btn-lg animated bounceInDown" style="animation-delay: 1.3s" href="#sec-1">ZAPISZ
         SIĘ</a>
 </div>
+
 <div class="content" id="sec-1">
     <div class="title">
         <h2>Najważniejsze informacje</h2>
@@ -61,45 +37,46 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6 boxes">
-                alskdaslkdj
+                <div class="boxes-icon">
+                    <img src="img/clock.png">
+                </div>
+                <div class="boxes-content">
+                    <p>KIEDY</p>
+                    Spotkanie odbędzie się 5 maja 2020 roku <br>
+                    Start o godzinie 12:00
+                </div>
             </div>
             <div class="col-sm-12 col-md-6 boxes">
-                alskdaslkdj
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-6 boxes">
-                alskdaslkdj
-            </div>
-            <div class="col-sm-12 col-md-6 boxes">
-                alskdaslkdj
-            </div>
-        </div>
-    </div>
-</div>
-<div class="first secound" id="sec-2">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="form-box">
-                    <h1>Zapisz się</h1>
-                    <form>
-                        <label>Imię</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="Podaj imię">
-                        <label>Nazwisko</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Podaj nazwisko">
-                        <label>E-mail</label>
-                        <input type="text" name="email" id="email" placeholder="Podaj email">
-
-                        <input type="submit" name="submit" id="submit" value="Zapisz">
-                    </form>
+                <div class="boxes-icon">
+                    <img src="img/place.png">
+                </div>
+                <div class="boxes-content">
+                    <p>GDZIE</p>
+                    Zapraszamy do Lublina<br>
+                    ul. Aleje Racławickie 10
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<button onclick="topFunction()" id="myBtn" title="Wróć na górę"><i class="fas fa-angle-up fa-2x"></i></button>
+<div class="first secound" id="sec-2">
+    <div class="form-box">
+        <h1>Zapisz się</h1>
+        <form>
+            <label>Imię</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Podaj imię">
+            <label>Nazwisko</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Podaj nazwisko">
+            <label>E-mail</label>
+            <input type="text" name="email" id="email" placeholder="Podaj email">
+
+            <input type="submit" name="submit" id="submit" value="Zapisz">
+        </form>
+    </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Wróć na górę"><img src="img/up-arrow.png"></button>
 </body>
 </html>
 <script type="text/javascript">

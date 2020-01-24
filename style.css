@@ -4,7 +4,7 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     box-sizing: border-box;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*===Hide scrollbar===*/
@@ -35,65 +35,113 @@ body {
 }
 
 
+.caption {
+    overflow: hidden;
+    font-size: medium;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    color: white;
+    text-shadow: .1rem .1rem .8rem black;
+}
+
+.caption h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    padding-bottom: 1rem;
+}
+
+.caption h2 {
+    padding-bottom: 1rem;
+}
+
+.caption h3 {
+    padding-bottom: 1rem;
+}
+
+.caption .btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+    padding: .6rem 1.3rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.caption .btn-lg:hover {
+    background: rgb(233, 248, 255);
+}
+
+
+.content {
+    background-color: #73a1c587;
+    height: 370px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.content .title {
+    position: relative;
+    text-align: center;
+    padding: 50px 50px 20px 50px;
+}
+
+.content h2 {
+    overflow: hidden;
+    color: white;
+    text-shadow: .1rem .1rem .8rem black;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.content .container {
+    height: 70%;
+}
+
+.content .row {
+    height: 95%;
+    overflow: hidden;
+}
+
+.boxes {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+}
+
+.boxes .boxes-icon{
+    text-align: center;
+    width: 30%;
+    float: left;
+    filter: brightness(0) invert(.3);
+
+}
+
+.boxes .boxes-icon img{
+    width: 80px;
+}
+
+.boxes .boxes-content{
+    width: 60%;
+    float: right;
+    color: white;
+    text-shadow: 0 .1rem .4rem black;
+}
+
+.boxes .boxes-content p{
+    margin-bottom: 3px;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
 .secound {
     background-image: url("img/bg.jpg");
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-items: center;
-}
-
-.secound .container{
-    margin:auto;
-    display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.boxes {
-    margin: 0;
-    padding: 30px 0;
-    text-align: center;
-    border: 1px solid black;
-}
-
-.name {
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    box-sizing: border-box;
-    width: 100%;
-    display: inline-block;
-    margin: 70% auto 0 auto;
-    text-align: left;
-    font-size: 32px;
-    font-weight: bold;
-    text-shadow: .1rem .1rem .8rem black;
-}
-
-.content{
-    background-color: #fbfbfb;
-    height: 100vh;
-    padding-bottom: 50px;
-    overflow: hidden;
-}
-
-.container{
-    height: 70%;
-}
-
-.content h2{
-    overflow: hidden;
-}
-
-.content .row{
-    height: 50%;
-}
-
-.content .title{
-    position: relative;
-    text-align: center;
-    padding: 70px;
 }
 
 .form-box {
@@ -142,74 +190,53 @@ body {
     border-radius: 20px;
 }
 
-.caption {
-    overflow: hidden;
-    font-size: medium;
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    color: white;
-    text-shadow: .1rem .1rem .8rem black;
-}
-
-.caption h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: .2rem;
-    padding-bottom: 1rem;
-}
-
-.caption h2 {
-    padding-bottom: 1rem;
-}
-
-.caption h3 {
-    padding-bottom: 1rem;
-}
-
-.btn-lg {
-    border-width: medium;
-    border-radius: 0;
-    font-size: 1.1rem;
-    padding: .6rem 1.3rem;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.6);
-}
-
 .form-box input[type="submit"]:hover {
     cursor: pointer;
     background: #39dc79;
     color: #000;
 }
 
-/*===ScrollBack button===*/
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background: rgba(37, 52, 95, 0.83);
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
-    /*font-size: 22px; !* Increase font size *!*/
-    width: 50px;
-    height: 50px;
+@media only screen and (max-width: 768px) {
+    .boxes{
+        margin: 16px 0;
+    }
 }
 
-#myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-}
+@media only screen and (max-width: 1024px) {
+    /*===ScrollBack button===*/
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background: rgba(37, 52, 95, 0.83);
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 10px; /* Some padding */
+        border-radius: 50%; /* Rounded corners */
+        width: 50px;
+        height: 50px;
+    }
 
-/*===ScrollBack button===*/
+    #myBtn img{
+        max-width: 90%;
+        max-height: 90%;
+        filter: brightness(0) invert(1);
+    }
+
+    #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+    }
+
+    /*===ScrollBack button===*/
+}
 
 @media only screen and (max-width: 454px) {
     .form-box {
-        width: 100%;
+        width: 90%;
     }
 }
 
