@@ -7,13 +7,13 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="animate.css"/>
+    <link rel="stylesheet" href="style/animate.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="UTF-8"/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6bc5f061dc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zjazd absolwentów</title>
 </head>
@@ -75,8 +75,9 @@
         </form>
     </div>
 </div>
-
+<div class="scrollTop">
 <button onclick="topFunction()" id="myBtn" title="Wróć na górę"><img src="img/up-arrow.png"></button>
+</div>
 </body>
 </html>
 <script type="text/javascript">

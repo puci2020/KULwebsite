@@ -1,0 +1,207 @@
+$content-color: #73a1c587
+$form-button-bg-color: #39dc79
+$scrollTop-button-bg-color: #555
+
+*
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  scroll-behavior: smooth
+  box-sizing: border-box
+  font-family: 'Montsrrat', sans-serif
+
+//  hidde scrollbar
+body
+  overflow: -moz-scrollbars-none
+  -ms-overflow-style: none
+
+  .scrollTop
+    display: none
+
+  &::-webkit-scrollbar
+    width: 0 !important
+
+//\\
+
+.first
+  width: 100%
+  height: 100vh
+  background-image: url(../img/bg2.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center 0
+  background-attachment: fixed
+  position: relative
+
+.caption
+  overflow: hidden
+  font-size: medium
+  position: absolute
+  top: 30%
+  width: 100%
+  color: white
+  text-shadow: .1rem .1rem .8rem black
+
+  h1
+    font-size: 3rem
+    font-weight: 700
+    letter-spacing: .2rem
+    padding-bottom: 1rem
+
+  h2 h3
+    padding-bottom: 1rem
+
+  .btn-lg
+    border-width: medium
+    border-radius: 0
+    font-size: 1.1rem
+    padding: .6rem 1.3rem
+    font-weight: bold
+    background: rgba(0, 0, 0, 0.6)
+
+    &:hover
+      background: rgb(233, 248, 255)
+
+.content
+  background-color: $content-color
+  padding-bottom: 50px
+  overflow: hidden
+
+  .title
+    position: relative
+    text-align: center
+    padding: 50px 50px 50px 50px
+
+  h2
+    overflow: hidden
+    color: white
+    text-shadow: .1rem .1rem .8rem black
+    font-weight: bold
+    letter-spacing: .1rem
+
+  .container
+    height: 70%
+
+  .row
+    height: 95%
+    overflow: hidden
+
+.boxes
+  box-sizing: border-box
+  display: flex
+  align-items: center
+
+  .boxes-icon
+    text-align: center
+    width: 30%
+    float: left
+    filter: brightness(0) invert(.3)
+
+    img
+      width: 80px
+
+  .boxes-content
+    width: 60%
+    float: right
+    color: white
+    text-shadow: 0 .1rem .4rem black
+
+    p
+      margin-bottom: 3px
+      font-weight: bold
+      letter-spacing: .1rem
+
+.secound
+  background-image: url(../img/bg.jpg)
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+
+  .form-box
+    overflow: hidden
+    width: 430px
+    height: 520px
+    background: rgba(0, 0, 0, .5)
+    color: white
+    padding: 70px 30px
+    border-radius: 10px
+
+    label
+      margin: 0
+      padding: 0
+      font-weight: bold
+
+    input
+      width: 100%
+      margin-bottom: 20px
+
+      &[type="text"]
+        border: none
+        border-bottom: 1px solid white
+        background: transparent
+        outline: none
+        height: 40px
+        color: white
+        font-size: 1rem
+
+      &[type="submit"]
+        border: none
+        outline: none
+        height: 40px
+        background: #1c8adb
+        color: white
+        font-size: 1.1rem
+        border-radius: 2rem
+
+        &:hover
+          cursor: pointer
+          background: $form-button-bg-color
+          color: black
+
+@media only screen and (max-width: 374px)
+  .caption
+    h1
+      font-size: 2.3rem
+
+  .content
+    h2
+      font-size: 1.8rem
+
+@media only screen and (max-width: 454px)
+  .secound
+    .form-box
+      width: 90%
+
+@media only screen and (max-width: 768px)
+  .boxes
+    margin: 16px 0
+
+@media only screen and (max-width: 1024px)
+  body
+    .scrollTop
+      display: inline
+
+  #myBtn
+    display: none
+    position: fixed
+    bottom: 20px
+    right: 30px
+    z-index: 99
+    border: none
+    outline: none
+    background: rgba(37, 52, 95, .83)
+    color: white
+    cursor: pointer
+    padding: 10px
+    border-radius: 50%
+    width: 50px
+    height: 50px
+
+    img
+      max-width: 90%
+      max-height: 90%
+      filter: brightness(0) invert(1)
+
+    &:hover
+      background-color: $scrollTop-button-bg-color
