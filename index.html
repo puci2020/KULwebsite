@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zjazd absolwentów</title>
 </head>
-<body>
+<body onload="selectGenerate()">
 
 <div class="first">
 </div>
@@ -71,12 +71,7 @@
             <label>E-mail</label>
             <input type="text" name="email" id="email" placeholder="Podaj email">
             <label>Rocznik</label>
-            <select name="Rocznik">
-                <option disabled selected>Rocznik...</option>
-                <option>1990</option>
-                <option>1991</option>
-                <option>1992</option>
-                <option>1993</option>
+            <select required id="year" name="Rocznik">
             </select>
 
             <label>Dieta</label>
@@ -102,6 +97,17 @@
 </body>
 </html>
 <script type="text/javascript">
+    function selectGenerate(){
+
+        var optionField = "<option value='' disabled selected>Rocznik...</option>";
+
+        for(var i=1960; i<2000; i++){
+            optionField += "<option value='"+i+"'>"+i+"</option>"
+        }
+
+        document.getElementById('year').innerHTML = optionField;
+    }
+
     //Get the button:
     mybutton = document.getElementById("myBtn");
 

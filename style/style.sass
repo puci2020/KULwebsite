@@ -179,11 +179,18 @@ body
       outline: none
       color: white
       font-size: 1rem
-      option
-        color: black
-      &:first-of-type
+
+      &:invalid
         color: gray
 
+      option
+        font-size: 1.2rem
+        color: white
+        background-color: rgba(0, 0, 0, .8)
+        padding: 10px
+
+        &:checked
+          background-color: gray
 
   .radio-group
     width: 100%

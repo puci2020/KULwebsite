@@ -177,11 +177,17 @@ body::-webkit-scrollbar {
   color: white;
   font-size: 1rem;
 }
-.secound .form-box select option {
-  color: black;
-}
-.secound .form-box select:first-of-type {
+.secound .form-box select:invalid {
   color: gray;
+}
+.secound .form-box select option {
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.secound .form-box select option:checked {
+  background-color: gray;
 }
 .secound .radio-group {
   width: 100%;
