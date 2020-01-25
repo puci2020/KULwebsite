@@ -60,7 +60,7 @@ body::-webkit-scrollbar {
 }
 
 .content {
-  background-color: #73a1c587;
+  background-color: #73a1c5 87;
   padding-bottom: 50px;
   overflow: hidden;
 }
@@ -120,10 +120,10 @@ body::-webkit-scrollbar {
 .secound .form-box {
   overflow: hidden;
   width: 430px;
-  height: 520px;
+  height: 620px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 70px 30px;
+  padding: 50px 30px;
   border-radius: 10px;
 }
 .secound .form-box label {
@@ -152,11 +152,57 @@ body::-webkit-scrollbar {
   color: white;
   font-size: 1.1rem;
   border-radius: 2rem;
+  margin-top: 20px;
 }
 .secound .form-box input[type=submit]:hover {
   cursor: pointer;
   background: #39dc79;
   color: black;
+}
+.secound .form-box input[type=radio] {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+.secound .form-box select {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+}
+.secound .form-box select option {
+  color: black;
+}
+.secound .form-box select:first-of-type {
+  color: gray;
+}
+.secound .radio-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.secound .radio-group label {
+  font-weight: normal;
+}
+
+.footer {
+  height: 50px;
+  width: 100vw;
+  clear: both;
+  background: #222;
+  color: #555555;
+  text-align: center;
+  vertical-align: center;
+  line-height: 50px;
+  border-top: 1px solid darkblue;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 374px) {

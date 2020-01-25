@@ -1,6 +1,8 @@
-$content-color: #73a1c587
+$content-color: #73a1c5 87
 $form-button-bg-color: #39dc79
 $scrollTop-button-bg-color: #555
+$footer-bg-color: #222
+$footer-text-color: #555555
 
 *
   margin: 0
@@ -121,10 +123,10 @@ body
   .form-box
     overflow: hidden
     width: 430px
-    height: 520px
+    height: 620px
     background: rgba(0, 0, 0, .5)
     color: white
-    padding: 70px 30px
+    padding: 50px 30px
     border-radius: 10px
 
     label
@@ -153,11 +155,56 @@ body
         color: white
         font-size: 1.1rem
         border-radius: 2rem
+        margin-top: 20px
 
         &:hover
           cursor: pointer
           background: $form-button-bg-color
           color: black
+
+      &[type="radio"]
+        margin-bottom: 0
+        margin-left: 0
+        margin-right: 5px
+        width: 20px
+        height: 20px
+
+    select
+      width: 100%
+      margin-bottom: 20px
+      height: 40px
+      border: none
+      border-bottom: 1px solid white
+      background: transparent
+      outline: none
+      color: white
+      font-size: 1rem
+      option
+        color: black
+      &:first-of-type
+        color: gray
+
+
+  .radio-group
+    width: 100%
+    display: flex
+    align-items: center
+
+    label
+      font-weight: normal
+
+.footer
+  height: 50px
+  width: 100vw
+  clear: both
+  background: $footer-bg-color
+  color: $footer-text-color
+  text-align: center
+  vertical-align: center
+  line-height: 50px
+  border-top: 1px solid darkblue
+  overflow: hidden
+
 
 @media only screen and (max-width: 374px)
   .caption

@@ -26,7 +26,7 @@
     <h2 class="animated bounceInUp" style="animation-delay: .5s">ZJAZD ABSOLWENTÓW</h2>
     <h1 class="animated bounceInUp" style="animation-delay: .8s">PSYCHOLOGII</h1>
     <h3 class="animated bounceInUp" style="animation-delay: 1.1s">KATOLICKIEGO UNIWERSYSYTETU LUBELSKIEGO</h3>
-    <a class="btn btn-outline-light btn-lg animated bounceInDown" style="animation-delay: 1.3s" href="#sec-1">ZAPISZ
+    <a class="btn btn-outline-light btn-lg animated bounceInDown" style="animation-delay: 1.3s" href="#sec-2">ZAPISZ
         SIĘ</a>
 </div>
 
@@ -70,13 +70,34 @@
             <input type="text" name="lastName" id="lastName" placeholder="Podaj nazwisko">
             <label>E-mail</label>
             <input type="text" name="email" id="email" placeholder="Podaj email">
+            <label>Rocznik</label>
+            <select name="Rocznik">
+                <option disabled selected>Rocznik...</option>
+                <option>1990</option>
+                <option>1991</option>
+                <option>1992</option>
+                <option>1993</option>
+            </select>
+
+            <label>Dieta</label>
+            <div class="radio-group">
+                <input type="radio" name="food" id="food1">
+                <label for="food1">Mięsna</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="food" id="food2">
+                <label for="food2">Wegetariańska</label>
+            </div>
 
             <input type="submit" name="submit" id="submit" value="Zapisz">
         </form>
     </div>
 </div>
+<div class="footer">
+    Adam Pucicki © 2020 All rights reserved.
+</div>
 <div class="scrollTop">
-<button onclick="topFunction()" id="myBtn" title="Wróć na górę"><img src="img/up-arrow.png"></button>
+    <button onclick="topFunction()" id="myBtn" title="Wróć na górę"><img src="img/up-arrow.png"></button>
 </div>
 </body>
 </html>
