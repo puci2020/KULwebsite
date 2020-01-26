@@ -19,6 +19,10 @@
 <body onload="selectGenerate()">
 
 <div class="first">
+    <div class="language">
+        <a>PL</a>
+        <a>EN</a>
+    </div>
 </div>
 
 <div class="caption text-center col">
@@ -96,12 +100,12 @@
 </body>
 </html>
 <script type="text/javascript">
-    function selectGenerate(){
+    function selectGenerate() {
 
         var optionField = "<option value='' disabled selected>Rocznik...</option>";
 
-        for(var i=1960; i<2000; i++){
-            optionField += "<option value='"+i+"'>"+i+"</option>"
+        for (var i = 1960; i < 2000; i++) {
+            optionField += "<option value='" + i + "'>" + i + "</option>"
         }
 
         document.getElementById('year').innerHTML = optionField;

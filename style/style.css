@@ -28,6 +28,19 @@ body::-webkit-scrollbar {
   background-attachment: fixed;
   position: relative;
 }
+.first .language {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+}
+.first .language a {
+  margin-left: 10px;
+  color: gray;
+}
+.first .language a:hover {
+  color: aliceblue;
+  border-bottom: 1px solid aliceblue;
+}
 
 .caption {
   overflow: hidden;
@@ -128,6 +141,9 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.secound::before {
+  content: "";
 }
 .secound .form-box {
   overflow: hidden;
