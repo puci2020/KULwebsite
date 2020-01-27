@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montsrrat", sans-serif;
+}
+
+body {
+  background-color: #7b90bb87;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container {
+  width: 500px;
+}
+
+/*# sourceMappingURL=loginStyle.css.map */
