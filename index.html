@@ -66,27 +66,39 @@
 <div class="first secound" id="sec-2">
     <div class="form-box">
         <h1>Zapisz się</h1>
-        <form>
-            <label>Imię</label>
-            <input type="text" name="firstName" id="firstName" placeholder="Podaj imię">
-            <label>Nazwisko</label>
-            <input type="text" name="lastName" id="lastName" placeholder="Podaj nazwisko">
-            <label>E-mail</label>
-            <input type="text" name="email" id="email" placeholder="Podaj email">
-            <label>Rocznik</label>
-            <select required id="year" name="Rocznik">
-            </select>
-
-            <label>Dieta</label>
-            <div class="radio-group">
-                <input type="radio" name="food" id="food1">
-                <label for="food1">Mięsna</label>
+        <form id="form">
+            <div class="group">
+                <label>Imię</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Podaj imię" required>
+<!--                <span class="error" id="fNameErr"></span>-->
             </div>
-            <div class="radio-group">
-                <input type="radio" name="food" id="food2">
-                <label for="food2">Wegetariańska</label>
+            <div class="group">
+                <label>Nazwisko</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Podaj nazwisko" required>
+<!--                <span class="error" id="lNameErr"></span>-->
             </div>
-
+            <div class="group">
+                <label>E-mail</label>
+                <input type="text" name="email" id="email" placeholder="Podaj email" required>
+<!--                <span class="error"></span>-->
+            </div>
+            <div class="group">
+                <label>Rocznik</label>
+                <select id="year" name="Rocznik" required oninvalid="this.setCustomValidity('To pole nie może pozostać puste')" onchange="setCustomValidity('')">
+                </select>
+            </div>
+            <div class="group">
+                <label>Dieta</label>
+                <div class="radio-group">
+                    <input type="radio" name="food" id="food1">
+                    <label for="food1">Mięsna</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="food" id="food2" required>
+                    <label for="food2">Wegetariańska</label>
+                </div>
+<!--                <span class="error"></span>-->
+            </div>
             <input type="submit" name="submit" id="submit" value="Zapisz">
         </form>
     </div>
@@ -132,4 +144,21 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var elements = document.getElementsByTagName("INPUT");
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].oninvalid = function(e) {
+                e.target.setCustomValidity("");
+                if (!e.target.validity.valid) {
+                    e.target.setCustomValidity("To pole nie może pozostać puste");
+                }
+            };
+            elements[i].oninput = function(e) {
+                e.target.setCustomValidity("");
+            };
+        }
+    })
+
 </script>
