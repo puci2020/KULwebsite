@@ -71,22 +71,19 @@
         <form id="form">
             <div class="group">
                 <label>Imię</label>
-                <input type="text" name="firstName" id="firstName" placeholder="Podaj imię" required>
-<!--                <span class="error" id="fNameErr"></span>-->
+                <input type="text" name="firstName" id="firstName" placeholder="Podaj imię">
             </div>
             <div class="group">
                 <label>Nazwisko</label>
-                <input type="text" name="lastName" id="lastName" placeholder="Podaj nazwisko" required>
-<!--                <span class="error" id="lNameErr"></span>-->
+                <input type="text" name="lastName" id="lastName" placeholder="Podaj nazwisko">
             </div>
             <div class="group">
                 <label>E-mail</label>
-                <input type="text" name="email" id="email" placeholder="Podaj email" required>
-<!--                <span class="error"></span>-->
+                <input type="text" name="email" id="email" placeholder="Podaj email" >
             </div>
             <div class="group">
                 <label>Rocznik</label>
-                <select id="year" name="Rocznik" required oninvalid="this.setCustomValidity('To pole nie może pozostać puste')" onchange="setCustomValidity('')">
+                <select id="year" name="Rocznik" required oninvalid="setCustomValidity('Pole Rocznik nie może pozostać puste')" onchange="setCustomValidity('')">
                 </select>
             </div>
             <div class="group">
@@ -96,10 +93,9 @@
                     <label for="food1">Mięsna</label>
                 </div>
                 <div class="radio-group">
-                    <input type="radio" name="food" id="food2" required>
+                    <input type="radio" name="food" id="food2">
                     <label for="food2">Wegetariańska</label>
                 </div>
-<!--                <span class="error"></span>-->
             </div>
             <input type="submit" name="submit" id="submit" value="Zapisz">
         </form>
@@ -151,20 +147,70 @@
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        var elements = document.getElementsByTagName("INPUT");
+    function emailIsValid(mail) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)
+    }
 
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].oninvalid = function(e) {
-                e.target.setCustomValidity("");
-                if (!e.target.validity.valid) {
-                    e.target.setCustomValidity("To pole nie może pozostać puste");
-                }
-            };
-            elements[i].oninput = function(e) {
-                e.target.setCustomValidity("");
-            };
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     var elements = document.getElementsByTagName("INPUT");
+    //
+    //     for (var i = 0; i < elements.length; i++) {
+    //         elements[i].oninvalid = function(e) {
+    //             e.target.setCustomValidity("");
+    //             if (!e.target.validity.valid) {
+    //                 e.target.setCustomValidity("To pole nie może pozostać puste");
+    //             }
+    //         };
+    //
+    //         // if(emailIsValid(email.value) == false){
+    //         //     alert("Zły format adresu email");
+    //         // }
+    //         elements[i].oninput = function(e) {
+    //             e.target.setCustomValidity("");
+    //         };
+    //     }
+    // })
+
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+    const email = document.getElementById('email');
+    const year = document.getElementById('year');
+    const food1 = document.getElementById('food1');
+    const food2 = document.getElementById('food2');
+    const rejForm = document.getElementById('form');
+    const errorElement = document.getElementById('error');
+
+    rejForm.addEventListener('submit', (e) => {
+        let messages = [];
+
+        if (firstName.value === '' || firstName.value == null) {
+            messages.push('Pole Imię nie może pozostać puste');
+        }
+
+        if (lastName.value === '' || lastName.value == null) {
+            messages.push('Pole Nazwisko nie może pozostać puste');
+        }
+
+        if (email.value === '' || email.value == null) {
+            messages.push('Pole Email nie może pozostać puste');
+        } else if (emailIsValid(email.value) == false) {
+            messages.push('Zły format adresu email')
+        }
+
+        if(year.value == ''){
+            messages.push('Pole Rocznik nie może pozostać puste')
+        }
+
+        if(food1.checked == false && food2.checked == false){
+            messages.push('Wybierz rodzaj diety');
+        }
+
+
+        if (messages.length > 0) {
+            e.preventDefault();
+            // document.getElementById('errMes').style.display = 'block';
+            // errorElement.innerHTML = messages.join("</br>");
+            alert(messages.join("\n"));
         }
     })
-
 </script>
