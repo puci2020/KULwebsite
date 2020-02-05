@@ -5,8 +5,7 @@ $footer-bg-color: #222
 $footer-text-color: #555555
 
 *
-  margin: 0
-  padding: 0
+
   overflow-x: hidden
   scroll-behavior: smooth
   box-sizing: border-box
@@ -86,6 +85,7 @@ body
     background: rgba(0, 0, 0, 0.6)
     animation-name: bounceInDown
     animation-delay: 1.3s
+    margin-top: 20px
 
     &:hover
       background: rgb(233, 248, 255)
@@ -107,13 +107,19 @@ body
     text-shadow: .1rem .1rem .8rem black
     font-weight: bold
     letter-spacing: .1rem
-
-  .container
-    height: 70%
-
   .row
-    height: 95%
     overflow: hidden
+
+  //.container
+  //  height: 70%
+  //
+  //.row
+  //  height: 95%
+  //  overflow: hidden
+
+  .space
+    width: 100%
+    height: 30px
 
 .boxes
   box-sizing: border-box
@@ -139,6 +145,24 @@ body
       margin-bottom: 3px
       font-weight: bold
       letter-spacing: .1rem
+
+.gallery
+  .row
+    overflow: hidden
+    margin: 15px 0
+  .boxes-img
+    height: 220px
+    margin: 10px 0
+  img
+    max-height: 100%
+    max-width: 100%
+    transition: .5s
+
+    &:hover
+      filter: grayscale(100%)
+      cursor: pointer
+
+
 
 .secound
   background-image: url(../img/bg2.jpg)
@@ -260,6 +284,14 @@ body
 @media only screen and (max-width: 768px)
   .boxes
     margin: 16px 0
+  .space
+    display: none
+
+@media only screen and (max-width: 992px)
+  .boxes
+    margin: 16px 0
+  .space
+    display: none
 
 @media only screen and (max-width: 1024px)
   body
