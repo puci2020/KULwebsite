@@ -145,13 +145,15 @@ body::-webkit-scrollbar {
   height: 220px;
   margin: 10px 0;
 }
+.gallery .boxes-img:hover {
+  transform: scale(1.1);
+}
 .gallery img {
   max-height: 100%;
   max-width: 100%;
   transition: 0.5s;
 }
 .gallery img:hover {
-  filter: grayscale(100%);
   cursor: pointer;
 }
 
