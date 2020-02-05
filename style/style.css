@@ -141,6 +141,7 @@ body::-webkit-scrollbar {
   margin: 15px 0;
 }
 .gallery .boxes-img {
+  text-align: center;
   height: 220px;
   margin: 10px 0;
 }
