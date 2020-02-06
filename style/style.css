@@ -87,7 +87,7 @@ body::-webkit-scrollbar {
 
 .content {
   background-color: #051c3c;
-  padding-bottom: 50px;
+  padding-bottom: 55px;
   overflow: hidden;
 }
 .content .row {
@@ -95,7 +95,7 @@ body::-webkit-scrollbar {
 }
 .content .space {
   width: 100%;
-  height: 30px;
+  height: 55px;
 }
 
 .title {
