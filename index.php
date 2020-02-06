@@ -69,7 +69,7 @@
                 <div class="boxes-content">
                     <p>KOSZT</p>
                     Koszt wzięcia udziału to 150zł<br>
-                    Prosimy przelać kwotę na podany numer konta: 0211 6022 0200 0000 0337 9858 22
+                    Prosimy przelać kwotę na podany numer konta: 00 1111 2222 3333 4455 5566 6677
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up" data-aos-delay="200">

@@ -20,7 +20,7 @@
 
         </div>
         <div class="card-body">
-            <form method="post" action="#">
+            <form method="post" action="PHPscripts/loginSC.php">
                 <div class="form-group">
                     <label>Podaj email</label>
                     <input type="text" id="email" name="email" class="form-control"/>

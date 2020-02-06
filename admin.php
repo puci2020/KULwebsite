@@ -13,7 +13,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="admin.html">Panel administracyjny</a>
+    <a class="navbar-brand" href="admin.php">Panel administracyjny</a>
 
     <div class="form-inline">
 <!--        <form action="">-->
@@ -22,6 +22,7 @@
 <!--        </form>-->
         <div id="login_name">
             Administrator
+            <a type="button" name="edit" href="editAccount.php" class="btn btn-info">Edytuj dane logowania</a>
             <a type="button" name="logout" href="PHPscripts/logout.php" class="btn btn-danger">Wyloguj</a>
         </div>
     </div>
