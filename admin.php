@@ -4,6 +4,16 @@ include 'PHPscripts/db_connection.php';
 if (!isset($_SESSION['email'])) {
     header("Location: login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='musisz sie zalogować';</script>");
 }
+
+if(isset($_GET['edit'])){
+    $ID = $_GET['edit'];
+    $connect->query("UPDATE graduates SET payment='TAK' WHERE ID_user = $ID");
+}
+
+if(isset($_GET['delete'])){
+    $ID = $_GET['delete'];
+    $connect->query("UPDATE graduates SET payment='NIE' WHERE ID_user = $ID");
+}
 ?>
 
 <!DOCTYPE html>
@@ -23,10 +33,6 @@ if (!isset($_SESSION['email'])) {
     <a class="navbar-brand" href="admin.php">Panel administracyjny</a>
 
     <div class="form-inline">
-<!--        <form action="">-->
-<!--            <input class="form-control" type="search" placeholder="Szukaj" aria-label="Szukaj osoby">-->
-<!--            <button class="btn btn-info" type="submit">Wyszukaj</button>-->
-<!--        </form>-->
         <div id="login_name">
             <?php
             echo $_SESSION["email"];
@@ -57,59 +63,56 @@ if (!isset($_SESSION['email'])) {
                 echo $message;
             }
             ?>
-        <table class="table table-striped">
-            <thead class="thead-dark">
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Imię</th>
-                <th scope="col">Nazwisko</th>
-                <th scope="col">Email</th>
-                <th scope="col">Rocznik</th>
-                <th scope="col">Dieta</th>
-                <th scope="col">Opłata</th>
-                <th scope="col">Akcje</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>1999</td>
-                <td>Mięsna</td>
-                <td>Nie</td>
-                <td><button class="btn btn-success">Zapłacono</button>
-                    <button class="btn btn-danger">Nie zapłacono</button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>1967</td>
-                <td>Mięsna</td>
-                <td>Nie</td>
-                <td><button class="btn btn-success">Zapłacono</button>
-                    <button class="btn btn-danger">Nie zapłacono</button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>1999</td>
-                <td>Wegetariańska</td>
-                <td>Nie</td>
-                <td><button class="btn btn-success">Zapłacono</button>
-                    <button class="btn btn-danger">Nie zapłacono</button>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Imię</th>
+                    <th scope="col">Nazwisko</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Rocznik</th>
+                    <th scope="col">Dieta</th>
+                    <th scope="col">Opłata</th>
+                    <th scope="col">Akcje</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                $sql = "select * from graduates";
+                $result = $connect->query($sql);
+
+                $number = 0;
+
+                while ($row = mysqli_fetch_array($result)) {
+                    $id = $row['ID_user'];
+                    $firstName = $row['first_name'];
+                    $lastName = $row['last_name'];
+                    $email = $row['email'];
+                    $year = $row['year'];
+                    $diet = $row['diet'];
+                    $payment = $row['payment'];
+
+                    ?>
+                    <tr>
+                        <th scope="row"><?php echo $id?></th>
+                        <td><?php echo $firstName?></td>
+                        <td><?php echo $lastName?></td>
+                        <td><?php echo $email?></td>
+                        <td><?php echo $year?></td>
+                        <td><?php echo $diet?></td>
+                        <td><?php echo $payment?></td>
+                        <td>
+                            <a href="admin.php?edit=<?php echo $id; ?>" class="btn btn-success">Zapłacono</a>
+                            <a href="admin.php?delete=<?php echo $id; ?>" class="btn btn-danger">Nie zapłacono</a>
+                        </td>
+                    </tr>
+                    <script>changeColor("pay")</script>
+                <?php
+                }
+                ?>
+                </tbody>
+            </table>
+        </div>
 </main>
 
 </body>
@@ -122,4 +125,5 @@ if (!isset($_SESSION['email'])) {
     function closeMsg2() {
         document.getElementById('message2').style.display = 'none';
     }
+
 </script>
