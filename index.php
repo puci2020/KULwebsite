@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" href="style/animations.css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <meta charset="UTF-8"/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -23,6 +23,17 @@
 </div>
 
 <div class="caption text-center col">
+   <div class="errorForm">
+    <?php
+    $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    if(strpos($fullUrl, "registrationSC=exist") == true){
+        echo "<div class='alert alert-danger' id='alertForm'>Podany email został już zarejestrowany w bazie</div>";
+    }else
+        if(strpos($fullUrl, "registrationSC=success") == true){
+            echo "<div class='alert alert-success' id='alertForm'>Rejestracja zakończona sukcesem!</div>";
+        }
+    ?>
+   </div>
     <h2 class="animated">II ZJAZD ABSOLWENTÓW</h2>
     <h1 class="animated">PSYCHOLOGII</h1>
     <h3 class="animated">KATOLICKIEGO UNIWERSYSYTETU LUBELSKIEGO</h3>
@@ -80,7 +91,7 @@
             </div>
             <div class="space"></div>
             <div class="space">
-                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up">ZAPISZ SIĘ JUŻ
+                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up" data-aos-delay="500">ZAPISZ SIĘ JUŻ
                     TERAZ!</a>
             </div>
         </div>
@@ -183,110 +194,11 @@
 </body>
 </html>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="JSscripts/lightbox-plus-jquery.min.js"></script>
 <script>
     AOS.init({
         once: true
+
     });
 </script>
-<script type="text/javascript">
-    function selectGenerate() {
-
-        var optionField = "<option value='' disabled selected>Wybierz rocznik</option>";
-
-        for (var i = 1960; i < 2000; i++) {
-            optionField += "<option value='" + i + "'>" + i + "</option>"
-        }
-
-        document.getElementById('year').innerHTML = optionField;
-    }
-
-    //Get the button:
-    mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-        scrollFunction()
-    };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-
-    function emailIsValid(mail) {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)
-    }
-
-    // document.addEventListener("DOMContentLoaded", function() {
-    //     var elements = document.getElementsByTagName("INPUT");
-    //
-    //     for (var i = 0; i < elements.length; i++) {
-    //         elements[i].oninvalid = function(e) {
-    //             e.target.setCustomValidity("");
-    //             if (!e.target.validity.valid) {
-    //                 e.target.setCustomValidity("To pole nie może pozostać puste");
-    //             }
-    //         };
-    //
-    //         // if(emailIsValid(email.value) == false){
-    //         //     alert("Zły format adresu email");
-    //         // }
-    //         elements[i].oninput = function(e) {
-    //             e.target.setCustomValidity("");
-    //         };
-    //     }
-    // })
-
-    const firstName = document.getElementById('firstName');
-    const lastName = document.getElementById('lastName');
-    const email = document.getElementById('email');
-    const year = document.getElementById('year');
-    const food1 = document.getElementById('food1');
-    const food2 = document.getElementById('food2');
-    const rejForm = document.getElementById('form');
-    const errorElement = document.getElementById('error');
-
-    rejForm.addEventListener('submit', (e) => {
-        let messages = [];
-
-        if (firstName.value === '' || firstName.value == null) {
-            messages.push('Pole Imię nie może pozostać puste');
-        }
-
-        if (lastName.value === '' || lastName.value == null) {
-            messages.push('Pole Nazwisko nie może pozostać puste');
-        }
-
-        if (email.value === '' || email.value == null) {
-            messages.push('Pole Email nie może pozostać puste');
-        } else if (emailIsValid(email.value) == false) {
-            messages.push('Zły format adresu email')
-        }
-
-        if (year.value == '') {
-            messages.push('Pole Rocznik nie może pozostać puste')
-        }
-
-        if (food1.checked == false && food2.checked == false) {
-            messages.push('Wybierz rodzaj diety');
-        }
-
-
-        if (messages.length > 0) {
-            e.preventDefault();
-            // document.getElementById('errMes').style.display = 'block';
-            // errorElement.innerHTML = messages.join("</br>");
-            alert(messages.join("\n"));
-        }
-    })
-</script>
+<script src="JSscripts/indexValidation.js"></script>

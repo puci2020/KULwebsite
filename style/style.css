@@ -36,6 +36,11 @@ body::-webkit-scrollbar {
   color: white;
   text-shadow: 0.3rem 0.3rem 0.4rem black;
 }
+.caption .errorForm {
+  display: flex;
+  justify-content: center;
+  text-shadow: none;
+}
 .caption h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -289,6 +294,10 @@ body::-webkit-scrollbar {
   .space {
     display: none;
   }
+
+  .content {
+    animation: none;
+  }
 }
 @media only screen and (max-width: 992px) {
   .boxes {
@@ -328,6 +337,14 @@ body::-webkit-scrollbar {
   #myBtn:hover {
     background-color: #555;
   }
+}
+#message, #message2 {
+  width: 300px;
+  display: none;
+}
+
+#alertForm {
+  width: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

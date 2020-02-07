@@ -14,18 +14,14 @@ try {
         $query1 = "select email from graduates where email='$email'";
         $result1 = $connect->query($query1);
 
-        $msgbox = header("Location: ../index.php?message=<script type='text/javascript'>alert('Rejestracja udana');</script>");
-
-        if (mysqli_num_rows($result1) > 0 || mysqli_num_rows($result2) > 0) {
-//            header("Location: ../index.php?message=<script type='text/javascript'>alert('Podany email został już zarejestrowany');</script>");
-            header("Location: ../index.php");
-            echo '<script type="text/javascript">';
-            echo ' alert("Podany email został już zarejestrowany")';  //not showing an alert box.
-            echo '</script>';
+        if (mysqli_num_rows($result1) > 0) {
+            header("Location: ../index.php?registrationSC=exist");
+            exit();
         } else {
             $sql = "insert into graduates values (DEFAULT, '$firstName', '$lastName', '$email', '$year', '$diet', DEFAULT)";
             $connect->query($sql);
-            echo $msgbox;
+            header("Location: ../index.php?registrationSC=success");
+            exit();
         }
 
     }
