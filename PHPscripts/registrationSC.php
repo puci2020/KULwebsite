@@ -3,45 +3,31 @@
 include 'db_connection.php';
 
 try {
-    if (isset($_POST['register'])) {
+    if (isset($_POST['submit'])) {
 
-        $name = $connect->real_escape_string($_POST['name']);
+        $firstName = $connect->real_escape_string($_POST['firstName']);
+        $lastName = $connect->real_escape_string($_POST['lastName']);
         $email = $connect->real_escape_string($_POST['email']);
-        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-        $accountType = $_POST['typeAccount'];
+        $year = $_POST['Rocznik'];
+        $diet = $_POST['food'];
 
-        if ($accountType == "option1") {
-            $query1 = "select email from register where email='$email'";
-            $result1 = $connect->query($query1);
-            $query2 = "select email from users where email='$email'";
-            $result2 = $connect->query($query2);
+        $query1 = "select email from graduates where email='$email'";
+        $result1 = $connect->query($query1);
 
-            $msgbox = header("Location: registration.php?message=<script type='text/javascript'>document.getElementById('message2').style.display='block'; document.getElementById('error2').innerText='rejestracja udana';</script>");
+        $msgbox = header("Location: ../index.php?message=<script type='text/javascript'>alert('Rejestracja udana');</script>");
 
-            if (mysqli_num_rows($result1) > 0 || mysqli_num_rows($result2) > 0) {
-                header("Location: registration.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='ten email jest zajety';</script>");
-            } else {
-                $sql = "insert into register values (DEFAULT, '$name', '$email', '$password')";
-                $connect->query($sql);
-                echo $msgbox;
-            }
+        if (mysqli_num_rows($result1) > 0 || mysqli_num_rows($result2) > 0) {
+//            header("Location: ../index.php?message=<script type='text/javascript'>alert('Podany email został już zarejestrowany');</script>");
+            header("Location: ../index.php");
+            echo '<script type="text/javascript">';
+            echo ' alert("Podany email został już zarejestrowany")';  //not showing an alert box.
+            echo '</script>';
         } else {
-            $query1 = "select email from users where email='$email'";
-            $result1 = $connect->query($query1);
-            $query2 = "select email from register where email='$email'";
-            $result2 = $connect->query($query2);
-
-            $msgbox = header("Location: registration.php?message=<script type='text/javascript'>document.getElementById('message2').style.display='block'; document.getElementById('error2').innerText='rejestracja udana';</script>");
-
-            if (mysqli_num_rows($result1) > 0 || mysqli_num_rows($result2) > 0) {
-                header("Location: registration.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='ten email jest zajety';</script>");
-            } else {
-                $sql = "insert into users values (DEFAULT, '$name', '$email', '$password')";
-                $connect->query($sql);
-                echo $msgbox;
-
-            }
+            $sql = "insert into graduates values (DEFAULT, '$firstName', '$lastName', '$email', '$year', '$diet', DEFAULT)";
+            $connect->query($sql);
+            echo $msgbox;
         }
+
     }
 } catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";

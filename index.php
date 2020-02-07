@@ -80,7 +80,8 @@
             </div>
             <div class="space"></div>
             <div class="space">
-                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up">ZAPISZ SIĘ JUŻ TERAZ!</a>
+                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up">ZAPISZ SIĘ JUŻ
+                    TERAZ!</a>
             </div>
         </div>
     </div>
@@ -138,7 +139,7 @@
 <div class="first secound" id="sec-2">
     <div class="form-box">
         <h2>Zapisz się</h2>
-        <form id="form">
+        <form method="post" id="form" action="PHPscripts/registrationSC.php">
             <div class="group">
                 <label>Imię</label>
                 <input type="text" name="firstName" id="firstName" placeholder="Podaj imię">
@@ -161,11 +162,11 @@
             <div class="group">
                 <label>Dieta</label>
                 <div class="radio-group">
-                    <input type="radio" name="food" id="food1">
+                    <input type="radio" name="food" id="food1" value="Mięsna">
                     <label for="food1">Mięsna</label>
                 </div>
                 <div class="radio-group">
-                    <input type="radio" name="food" id="food2">
+                    <input type="radio" name="food" id="food2" value="Wegetariańska">
                     <label for="food2">Wegetariańska</label>
                 </div>
             </div>
