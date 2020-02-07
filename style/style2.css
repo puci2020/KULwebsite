@@ -28,6 +28,10 @@ main {
   padding: 40px 60px;
 }
 
+form {
+  margin-right: 10px;
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg {
     justify-content: space-between;

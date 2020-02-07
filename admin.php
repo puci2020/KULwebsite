@@ -14,6 +14,7 @@ if(isset($_GET['delete'])){
     $ID = $_GET['delete'];
     $connect->query("UPDATE graduates SET payment='NIE' WHERE ID_user = $ID");
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -33,6 +34,12 @@ if(isset($_GET['delete'])){
     <a class="navbar-brand" href="admin.php">Panel administracyjny</a>
 
     <div class="form-inline">
+        <form method="post" action="PHPscripts/exportCSV.php">
+            <button type="submit" name="export" class="btn btn-success">Pobierz tabele CSV</button>
+        </form>
+        <form method="post" action="PHPscripts/exportPDF.php">
+            <button type="submit" name="exportPDF" class="btn btn-success">Pobierz tabele PDF</button>
+        </form>
         <div id="login_name">
             <?php
             echo $_SESSION["email"];
@@ -63,6 +70,7 @@ if(isset($_GET['delete'])){
                 echo $message;
             }
             ?>
+
             <table class="table table-striped">
                 <thead class="thead-dark">
                 <tr>
