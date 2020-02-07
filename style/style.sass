@@ -34,20 +34,6 @@ body
   background-attachment: fixed
   position: relative
 
-  .language
-    position: absolute
-    top: 20px
-    right: 70px
-
-    a
-      margin-left: 10px
-      color: lightgray
-
-      &:hover
-        cursor: pointer
-        color: aliceblue
-        border-bottom: 1px solid aliceblue
-
 .caption
   overflow: hidden
   font-size: medium
@@ -76,20 +62,20 @@ body
     animation-name: bounceInUp
     animation-delay: 1.1s
 
-  .btn-lg
-    border-width: medium
-    border-radius: 0
-    font-size: 1.1rem
-    padding: .6rem 1.3rem
-    font-weight: bold
-    background: rgba(0, 0, 0, 0.6)
-    animation-name: bounceInDown
-    animation-delay: 1.3s
-    margin-top: 20px
+.btn-lg
+  border-width: medium
+  border-radius: 0
+  font-size: 1.1rem
+  padding: .6rem 1.3rem
+  font-weight: bold
+  background: rgba(0, 0, 0, 0.6)
+  animation-name: bounceInDown
+  animation-delay: 1.3s
+  margin-top: 20px
 
-    &:hover
-      background: rgb(233, 248, 255)
-      text-shadow: none
+  &:hover
+    background: rgb(233, 248, 255)
+    text-shadow: none
 
 .content
   background-color: $content-color
@@ -102,6 +88,15 @@ body
   .space
     width: 100%
     height: 55px
+    text-align: center
+    overflow: hidden
+    .btn-lg
+      margin: 0
+      animation: none
+      background: transparent
+      &:hover
+        background: rgb(233, 248, 255)
+        text-shadow: none
 
 .title
   position: relative
@@ -138,6 +133,7 @@ body
       margin-bottom: 3px
       font-weight: bold
       letter-spacing: .1rem
+
 
 .gallery
 
@@ -181,6 +177,9 @@ body
     color: white
     padding: 50px 30px
     border-radius: 10px
+
+    h2
+      text-align: center
 
     label
       margin: 0

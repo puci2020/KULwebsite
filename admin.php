@@ -1,3 +1,11 @@
+<?php
+include 'PHPscripts/db_connection.php';
+
+if (!isset($_SESSION['email'])) {
+    header("Location: login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='musisz sie zalogować';</script>");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -21,7 +29,9 @@
 <!--            <button class="btn btn-info" type="submit">Wyszukaj</button>-->
 <!--        </form>-->
         <div id="login_name">
-            Administrator
+            <?php
+            echo $_SESSION["email"];
+            ?>
             <a type="button" name="edit" href="editAccount.php" class="btn btn-info">Edytuj dane logowania</a>
             <a type="button" name="logout" href="PHPscripts/logout.php" class="btn btn-danger">Wyloguj</a>
         </div>
@@ -30,6 +40,24 @@
 
 <main>
     <div class="container">
+        <div class="alert alert-danger alert-dismissible" id="message">
+            <div id="error"></div>
+            <a href="#" class="close" onclick="closeMsg()" aria-label="close">&times;</a>
+        </div>
+
+        <div class="alert alert-success alert-dismissible" id="message2">
+            <div id="error2"></div>
+            <a href="#" class="close" onclick="closeMsg2()" aria-label="close">&times;</a>
+        </div>
+
+        <div class="card" id="login">
+
+            <?php
+            if (isset($_GET['message'])) {
+                $message = $_GET['message'];
+                echo $message;
+            }
+            ?>
         <table class="table table-striped">
             <thead class="thead-dark">
             <tr>
@@ -87,3 +115,12 @@
 
 </body>
 </html>
+<script>
+    function closeMsg() {
+        document.getElementById('message').style.display = 'none';
+    }
+
+    function closeMsg2() {
+        document.getElementById('message2').style.display = 'none';
+    }
+</script>

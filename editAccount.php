@@ -2,16 +2,18 @@
 
 include 'PHPscripts/editAccountSC.php';
 
+
+
 ?>
 
 <!DOCTYPE HTML>
-<html>
-
+<html lang="pl">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style2.css"/>
     <meta charset="UTF-8"/>
+    <title>Edytuj dane</title>
 </head>
 <body>
 
@@ -21,7 +23,7 @@ include 'PHPscripts/editAccountSC.php';
     <div class="form-inline">
         <div id="login_name">
             <?php
-            echo $_SESSION["name"];
+            echo $_SESSION["email"];
             ?>
             <a type="button" name="logout" href="PHPscripts/logout.php" class="btn btn-danger">Wyloguj</a>
         </div>
@@ -54,7 +56,7 @@ include 'PHPscripts/editAccountSC.php';
         </div>
         <div class="row">
             <div class="card-body col-6" id="edit_password">
-                <form method="post" action="edit_account.php">
+                <form method="post" action="PHPscripts/editAccountSC.php">
                     <div class="form-group">
                         <label>Podaj nowe haslo</label>
                         <input type="password" id="password" name="password" class="form-control"/>
@@ -69,7 +71,7 @@ include 'PHPscripts/editAccountSC.php';
                 </form>
             </div>
             <div class="card-body col-6" id="edit_email">
-                <form method="post" action="edit_account.php">
+                <form method="post" action="PHPscripts/editAccountSC.php">
                     <div class="form-group">
                         <label>Podaj nowy email</label>
                         <input type="text" id="email" name="email" class="form-control"/>

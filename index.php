@@ -20,14 +20,10 @@
 <body onload="selectGenerate()">
 
 <div class="first">
-    <div class="language">
-        <a>PL</a>
-        <a>EN</a>
-    </div>
 </div>
 
 <div class="caption text-center col">
-    <h2 class="animated">ZJAZD ABSOLWENTÓW</h2>
+    <h2 class="animated">II ZJAZD ABSOLWENTÓW</h2>
     <h1 class="animated">PSYCHOLOGII</h1>
     <h3 class="animated">KATOLICKIEGO UNIWERSYSYTETU LUBELSKIEGO</h3>
     <a class="btn btn-outline-light btn-lg animated" href="#sec-1">WIĘCEJ INFORMACJI</a>
@@ -62,7 +58,7 @@
                 </div>
             </div>
             <div class="space"></div>
-            <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up">
                 <div class="boxes-icon">
                     <img src="img/money.png">
                 </div>
@@ -81,6 +77,10 @@
                     Wszelkie pytania prosimy kierować na:<br>
                     absolwent.psychologii@gmail.com
                 </div>
+            </div>
+            <div class="space"></div>
+            <div class="space">
+                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up">ZAPISZ SIĘ JUŻ TERAZ!</a>
             </div>
         </div>
     </div>
@@ -137,7 +137,7 @@
 
 <div class="first secound" id="sec-2">
     <div class="form-box">
-        <h1>Zapisz się</h1>
+        <h2>Zapisz się</h2>
         <form id="form">
             <div class="group">
                 <label>Imię</label>

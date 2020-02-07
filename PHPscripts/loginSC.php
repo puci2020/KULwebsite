@@ -13,9 +13,8 @@ try {
 
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_array($result)) {
-                if ($password == $row["password"]) {
-//                    password_verify($password, $row["password"])
-                    $_SESSION["name"] = $row["email"];
+                if (password_verify($password, $row["password"])) {
+                    $_SESSION["email"] = $row["email"];
 
                     header("Location: ../admin.php?message=<script type='text/javascript'>document.getElementById('message2').style.display='block'; document.getElementById('error2').innerText='zalogowany';</script>");
                 } else {
@@ -23,7 +22,7 @@ try {
                 }
             }
         } else {
-            header("Location: login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='podany email jest nieprawidłowy';</script>");
+            header("Location: ../login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='podany email jest nieprawidłowy';</script>");
         }
     }
 
