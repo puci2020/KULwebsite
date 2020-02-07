@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="style/animations.css"/>
     <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="style/lightbox.min.css">
     <meta charset="UTF-8"/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css"/>
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <div class="space"></div>
-            <div class="space">
+            <div class="space button">
                 <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up" data-aos-delay="500">ZAPISZ SIĘ JUŻ
                     TERAZ!</a>
             </div>
@@ -198,7 +198,7 @@
 <script>
     AOS.init({
         once: true
-
     });
+
 </script>
 <script src="JSscripts/indexValidation.js"></script>

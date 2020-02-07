@@ -91,12 +91,12 @@ body::-webkit-scrollbar {
   text-align: center;
   overflow: hidden;
 }
-.content .space .btn-lg {
+.content .btn-lg {
   margin: 0;
   animation: none;
   background: transparent;
 }
-.content .space .btn-lg:hover {
+.content .btn-lg:hover {
   background: #e9f8ff;
   text-shadow: none;
 }
@@ -128,13 +128,14 @@ body::-webkit-scrollbar {
 .boxes .boxes-icon img {
   width: 80px;
 }
-.boxes .boxes-content {
+
+.boxes-content {
   width: 60%;
   float: right;
   color: white;
   text-shadow: 0 0.1rem 0.4rem black;
 }
-.boxes .boxes-content p {
+.boxes-content p {
   margin-bottom: 3px;
   font-weight: bold;
   letter-spacing: 0.1rem;
@@ -175,7 +176,8 @@ body::-webkit-scrollbar {
 .secound::before {
   content: "";
 }
-.secound .form-box {
+
+.form-box {
   overflow: hidden;
   width: 430px;
   height: 620px;
@@ -184,19 +186,20 @@ body::-webkit-scrollbar {
   padding: 50px 30px;
   border-radius: 10px;
 }
-.secound .form-box h2 {
+.form-box h2 {
   text-align: center;
 }
-.secound .form-box label {
+.form-box label {
   margin: 0;
   padding: 0;
   font-weight: bold;
 }
-.secound .form-box input {
+
+input {
   width: 100%;
   margin-bottom: 20px;
 }
-.secound .form-box input[type=text] {
+input[type=text] {
   border: none;
   border-bottom: 1px solid white;
   background: transparent;
@@ -205,7 +208,7 @@ body::-webkit-scrollbar {
   color: white;
   font-size: 1rem;
 }
-.secound .form-box input[type=submit] {
+input[type=submit] {
   border: none;
   outline: none;
   height: 40px;
@@ -215,19 +218,20 @@ body::-webkit-scrollbar {
   border-radius: 2rem;
   margin-top: 20px;
 }
-.secound .form-box input[type=submit]:hover {
+input[type=submit]:hover {
   cursor: pointer;
   background: #39dc79;
   color: black;
 }
-.secound .form-box input[type=radio] {
+input[type=radio] {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 5px;
   width: 20px;
   height: 20px;
 }
-.secound .form-box select {
+
+select {
   width: 100%;
   margin-bottom: 20px;
   height: 40px;
@@ -238,24 +242,25 @@ body::-webkit-scrollbar {
   color: white;
   font-size: 1rem;
 }
-.secound .form-box select:invalid {
+select:invalid {
   color: gray;
 }
-.secound .form-box select option {
+select option {
   font-size: 1.2rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
 }
-.secound .form-box select option:checked {
+select option:checked {
   background-color: gray;
 }
-.secound .radio-group {
+
+.radio-group {
   width: 100%;
   display: flex;
   align-items: center;
 }
-.secound .radio-group label {
+.radio-group label {
   font-weight: normal;
 }
 
@@ -291,10 +296,6 @@ body::-webkit-scrollbar {
     margin: 16px 0;
   }
 
-  .space {
-    display: none;
-  }
-
   .content {
     animation: none;
   }
@@ -306,6 +307,10 @@ body::-webkit-scrollbar {
 
   .space {
     display: none;
+  }
+
+  .space.button {
+    display: block;
   }
 }
 @media only screen and (max-width: 1024px) {
