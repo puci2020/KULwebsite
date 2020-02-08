@@ -23,17 +23,17 @@
 </div>
 
 <div class="caption text-center col">
-   <div class="errorForm">
-    <?php
-    $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-    if(strpos($fullUrl, "registrationSC=exist") == true){
-        echo "<div class='alert alert-danger' id='alertForm'>Podany email został już zarejestrowany w bazie</div>";
-    }else
-        if(strpos($fullUrl, "registrationSC=success") == true){
-            echo "<div class='alert alert-success' id='alertForm'>Rejestracja zakończona sukcesem!</div>";
-        }
-    ?>
-   </div>
+    <div class="errorForm">
+        <?php
+        $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        if (strpos($fullUrl, "registrationSC=exist") == true) {
+            echo "<div class='alert alert-danger' id='alertForm'>Podany email został już zarejestrowany w bazie</div>";
+        } else
+            if (strpos($fullUrl, "registrationSC=success") == true) {
+                echo "<div class='alert alert-success' id='alertForm'>Rejestracja zakończona sukcesem!</div>";
+            }
+        ?>
+    </div>
     <h2 class="animated">II ZJAZD ABSOLWENTÓW</h2>
     <h1 class="animated">PSYCHOLOGII</h1>
     <h3 class="animated">KATOLICKIEGO UNIWERSYSYTETU LUBELSKIEGO</h3>
@@ -103,7 +103,8 @@
             </div>
             <div class="space"></div>
             <div class="space button">
-                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up" data-aos-delay="500">ZAPISZ SIĘ JUŻ
+                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up" data-aos-delay="500">ZAPISZ
+                    SIĘ JUŻ
                     TERAZ!</a>
             </div>
         </div>
