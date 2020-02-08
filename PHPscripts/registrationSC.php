@@ -20,6 +20,7 @@ try {
         } else {
             $sql = "insert into graduates values (DEFAULT, '$firstName', '$lastName', '$email', '$year', '$diet', DEFAULT)";
             $connect->query($sql);
+
             header("Location: ../index.php?registrationSC=success");
             exit();
         }

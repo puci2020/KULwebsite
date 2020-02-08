@@ -41,6 +41,17 @@
 </div>
 
 <div class="content" id="sec-1">
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <b>Numer rachunku: </b>
+            <p>00 1111 2222 3333 4455 5566 6677</p>
+            <b>Tytuł przelewu: </b>
+            <p>Zjazd absolwentów adres Email</p>
+        </div>
+    </div>
+
     <div class="title">
         <h2>Najważniejsze informacje</h2>
     </div>
@@ -76,7 +87,8 @@
                 <div class="boxes-content">
                     <p>KOSZT</p>
                     Koszt wzięcia udziału to 150zł<br>
-                    Prosimy przelać kwotę na podany numer konta: 00 1111 2222 3333 4455 5566 6677
+                    Prosimy przelać kwotę na rachunek bankowy<br>
+                    Informację dotyczące przelewu znajdziesz klikając <a href="#sec-1" id="popup"> tutaj</a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up" data-aos-delay="200">
@@ -86,7 +98,7 @@
                 <div class="boxes-content">
                     <p>KONTAKT</p>
                     Wszelkie pytania prosimy kierować na:<br>
-                    absolwent.psychologii@gmail.com
+                    <a href="mailto:absolwent.psychologii@gmail.com" id="mail">absolwent.psychologii@gmail.com</a>
                 </div>
             </div>
             <div class="space"></div>

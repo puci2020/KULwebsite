@@ -33,5 +33,7 @@ loginForm.addEventListener('submit', (e) => {
         document.getElementById('message').style.display = 'block';
         errorElement.innerHTML = messages.join("</br>");
     }
-})
+});
+
+
     
