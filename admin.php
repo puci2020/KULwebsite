@@ -37,6 +37,9 @@ if(isset($_GET['delete'])){
         <form method="post" action="PHPscripts/exportCSV.php">
             <button type="submit" name="export" class="btn btn-success">Pobierz tabele CSV</button>
         </form>
+        <form method="post" action="PHPscripts/exportPDF.php">
+            <button type="submit" name="exportPDF" class="btn btn-success">Pobierz tabele PDF</button>
+        </form>
         <div id="login_name">
             <?php
             echo $_SESSION["email"];
