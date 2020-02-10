@@ -27,7 +27,7 @@
         <?php
         $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         if (strpos($fullUrl, "registrationSC=exist") == true) {
-            echo "<div class='alert alert-danger' id='alertForm'>Podany email został już zarejestrowany w bazie</div>";
+            echo "<div class='alert alert-danger' id='alertForm'>Podany email został już zarejestrowany w bazie!</div>";
         } else
             if (strpos($fullUrl, "registrationSC=success") == true) {
                 echo "<div class='alert alert-success' id='alertForm'>Rejestracja zakończona sukcesem!</div>";
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="space"></div>
-            <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up">
+            <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up" data-aos-once="true">
                 <div class="boxes-icon">
                     <img src="img/money.png">
                 </div>
@@ -91,7 +91,7 @@
                     Informację dotyczące przelewu znajdziesz klikając <a href="#sec-1" id="popup"> tutaj</a>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
                 <div class="boxes-icon">
                     <img src="img/mail.png">
                 </div>
@@ -103,7 +103,7 @@
             </div>
             <div class="space"></div>
             <div class="space button">
-                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up" data-aos-delay="500">ZAPISZ
+                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up" data-aos-delay="500" data-aos-once="true">ZAPISZ
                     SIĘ JUŻ
                     TERAZ!</a>
             </div>
@@ -117,43 +117,43 @@
             <h2>Zobacz pierwszą edycję zjazdu</h2>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-once="true">
                 <a href="img/gallery-link/1.jpg" data-lightbox="mygallery"> <img src="img/gallery-small/1.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
                 <a href="img/gallery-link/2.jpg" data-lightbox="mygallery"><img src="img/gallery-small/2.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300" data-aos-once="true">
                 <a href="img/gallery-link/3.jpg" data-lightbox="mygallery"><img src="img/gallery-small/3.jpg"></a>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-once="true">
                 <a href="img/gallery-link/4.jpg" data-lightbox="mygallery"> <img src="img/gallery-small/4.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
                 <a href="img/gallery-link/5.jpg" data-lightbox="mygallery"><img src="img/gallery-small/5.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300" data-aos-once="true">
                 <a href="img/gallery-link/6.jpg" data-lightbox="mygallery"><img src="img/gallery-small/6.jpg"></a>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-once="true">
                 <a href="img/gallery-link/7.jpg" data-lightbox="mygallery"><img src="img/gallery-small/7.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
                 <a href="img/gallery-link/8.jpg" data-lightbox="mygallery"><img src="img/gallery-small/8.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300" data-aos-once="true">
                 <a href="img/gallery-link/9.jpg" data-lightbox="mygallery"><img src="img/gallery-small/9.jpg"></a>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-once="true">
                 <a href="img/gallery-link/10.jpg" data-lightbox="mygallery"><img src="img/gallery-small/10.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
                 <a href="img/gallery-link/11.jpg" data-lightbox="mygallery"><img src="img/gallery-small/11.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300" data-aos-once="true">
                 <a href="img/gallery-link/12.jpg" data-lightbox="mygallery"><img src="img/gallery-small/12.jpg"></a>
             </div>
         </div>
@@ -210,7 +210,7 @@
 <script src="JSscripts/lightbox-plus-jquery.min.js"></script>
 <script>
     AOS.init({
-        once: true
+        disable: 'mobile'
     });
 
 </script>

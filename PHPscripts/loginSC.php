@@ -14,15 +14,18 @@ try {
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_array($result)) {
                 if (password_verify($password, $row["password"])) {
+                    session_start();
                     $_SESSION["email"] = $row["email"];
+                    $_SESSION["time"] = time();
+                    $_SESSION["timeout"] = $_SESSION["time"] + 10800;
 
-                    header("Location: ../admin.php?message=<script type='text/javascript'>document.getElementById('message2').style.display='block'; document.getElementById('error2').innerText='zalogowany';</script>");
+                    header("Location: ../admin.php?message=<script type='text/javascript'>document.getElementById('message2').style.display='block'; document.getElementById('error2').innerText='Zalogowany!';</script>");
                 } else {
-                    header("Location: ../login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='błędne hasło';</script>");
+                    header("Location: ../login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='Błędne hasło!';</script>");
                 }
             }
         } else {
-            header("Location: ../login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='podany email jest nieprawidłowy';</script>");
+            header("Location: ../login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='Podany email jest nieprawidłowy!';</script>");
         }
     }
 

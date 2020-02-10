@@ -12,25 +12,24 @@
 <body>
 <div class="container">
 
+    <div class="alert alert-danger alert-dismissible" id="message">
+        <div id="error"></div>
+        <a href="#" class="close" onclick="closeMsg()" aria-label="close">&times;</a>
+    </div>
+
+    <div class="alert alert-success alert-dismissible" id="message2">
+        <div id="error2"></div>
+        <a href="#" class="close" onclick="closeMsg2()" aria-label="close">&times;</a>
+    </div>
+
     <div class="card" id="login">
-        <div class="alert alert-danger alert-dismissible" id="message">
-            <div id="error"></div>
-            <a href="#" class="close" onclick="closeMsg()" aria-label="close">&times;</a>
-        </div>
 
-        <div class="alert alert-success alert-dismissible" id="message2">
-            <div id="error2"></div>
-            <a href="#" class="close" onclick="closeMsg2()" aria-label="close">&times;</a>
-        </div>
-
-        <div class="card" id="login">
-
-            <?php
-            if (isset($_GET['message'])) {
-                $message = $_GET['message'];
-                echo $message;
-            }
-            ?>
+        <?php
+        if (isset($_GET['message'])) {
+            $message = $_GET['message'];
+            echo $message;
+        }
+        ?>
 
         <div class="card-header">
             <h4>Logowanie do panelu administracyjnego</h4>

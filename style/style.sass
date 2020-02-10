@@ -87,7 +87,6 @@ body
   a:hover
     color: white
 
-
   .row
     overflow: hidden
 
@@ -106,6 +105,7 @@ body
     &:hover
       background: rgb(233, 248, 255)
       text-shadow: none
+      color: black
 
 .title
   position: relative
@@ -179,9 +179,6 @@ body
   display: flex
   align-items: center
   justify-content: center
-
-  &::before
-    content: ''
 
 .form-box
   overflow: hidden
@@ -312,7 +309,7 @@ select
   cursor: pointer
 
 
-@media only screen and (max-width: 374px)
+@media only screen and (max-width: 375px)
   .caption
     h1
       font-size: 2.3rem
@@ -329,8 +326,12 @@ select
 @media only screen and (max-width: 768px)
   .boxes
     margin: 16px 0
-  .content
-    animation: none
+  .boxes-img
+    &:hover
+      transform: none
+  .caption
+    h1, h2, h3, .btn
+      animation: none
 
 
 @media only screen and (max-width: 992px)

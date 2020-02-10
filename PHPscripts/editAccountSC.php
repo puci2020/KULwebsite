@@ -2,7 +2,7 @@
 include 'db_connection.php';
 
 if (!isset($_SESSION['email'])) {
-    header("Location: login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='musisz sie zalogować';</script>");
+    header("Location: login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='Musisz sie zalogować!';</script>");
 }
 
 try {
@@ -16,7 +16,7 @@ try {
         $result1 = $connect->query($query1);
 
         if (mysqli_num_rows($result1) > 0) {
-            header("Location: ../editAccount.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='ten email jest zajety';</script>");
+            header("Location: ../editAccount.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='Ten email jest zajęty!';</script>");
         } else {
 
             $query1 = "UPDATE administrators SET email='$formEmail' where email='$email'";

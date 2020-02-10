@@ -102,6 +102,7 @@ body::-webkit-scrollbar {
 .content .btn-lg:hover {
   background: #e9f8ff;
   text-shadow: none;
+  color: black;
 }
 
 .title {
@@ -178,9 +179,6 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.secound::before {
-  content: "";
 }
 
 .form-box {
@@ -319,7 +317,7 @@ select option:checked {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 375px) {
   .caption h1 {
     font-size: 2.3rem;
   }
@@ -338,7 +336,11 @@ select option:checked {
     margin: 16px 0;
   }
 
-  .content {
+  .boxes-img:hover {
+    transform: none;
+  }
+
+  .caption h1, .caption h2, .caption h3, .caption .btn {
     animation: none;
   }
 }

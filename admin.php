@@ -2,7 +2,13 @@
 include 'PHPscripts/db_connection.php';
 
 if (!isset($_SESSION['email'])) {
-    header("Location: login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='musisz sie zalogować';</script>");
+    header("Location: login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='Musisz sie zalogować!';</script>");
+}else{
+    $now = time();
+    if ($now > $_SESSION["timeout"]){
+        session_destroy();
+        header("Location: login.php?message=<script type='text/javascript'>document.getElementById('message').style.display='block'; document.getElementById('error').innerText='Nastąpiło wylogowanie!';</script>");
+    }
 }
 
 if(isset($_GET['edit'])){
@@ -14,7 +20,6 @@ if(isset($_GET['delete'])){
     $ID = $_GET['delete'];
     $connect->query("UPDATE graduates SET payment='NIE' WHERE ID_user = $ID");
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -60,6 +65,11 @@ if(isset($_GET['delete'])){
         <div class="alert alert-success alert-dismissible" id="message2">
             <div id="error2"></div>
             <a href="#" class="close" onclick="closeMsg2()" aria-label="close">&times;</a>
+        </div>
+
+        <div class="alert alert-warning alert-dismissible" id="message3">
+            <div id="error3">Pamiętaj, aby się wylogować! Automatyczne wylogowanie nastąpi po 3 godzinach</div>
+            <a href="#" class="close" onclick="closeMsg3()" aria-label="close">&times;</a>
         </div>
 
         <div class="card" id="login">
@@ -132,6 +142,10 @@ if(isset($_GET['delete'])){
 
     function closeMsg2() {
         document.getElementById('message2').style.display = 'none';
+    }
+
+    function closeMsg3() {
+        document.getElementById('message3').style.display = 'none';
     }
 
 </script>

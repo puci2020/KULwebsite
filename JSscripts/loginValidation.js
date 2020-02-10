@@ -19,13 +19,13 @@ loginForm.addEventListener('submit', (e) => {
     let messages = [];
 
     if (email.value === '' || email.value == null) {
-        messages.push('wprowadz email');
+        messages.push('Wprowadz email!');
     } else if (emailIsValid(email.value) == false) {
         messages.push('zly format adresu email')
     }
 
     if (password.value === '' || password.value == null) {
-        messages.push('podaj haslo');
+        messages.push('Podaj haslo!');
     }
 
     if (messages.length > 0) {

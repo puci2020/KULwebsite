@@ -21,9 +21,9 @@ editEmailForm.addEventListener('submit', (e) => {
     let messages = [];
 
     if (email.value === '' || email.value == null) {
-        messages.push('wprowadz email');
+        messages.push('Wprowadz email!');
     } else if (emailIsValid(email.value) == false) {
-        messages.push('zly format adresu email')
+        messages.push('Zły format adresu email!')
     }
 
 
@@ -38,15 +38,15 @@ editPasswordForm.addEventListener('submit', (e) => {
     let messages = [];
 
     if (password.value === '' || password.value == null) {
-        messages.push('podaj haslo');
+        messages.push('Podaj hasło!');
     } else if ((password.value != '' || password.value != null) && (confirPassword.value === '' || confirPassword.value == null)) {
-        messages.push('potwierdz haslo');
+        messages.push('Potwierdź hasło!');
     } else if (confirPassword.value != password.value) {
-        messages.push('hasla musza byc takie same');
+        messages.push('Hasła muszą być takie same!');
     }else if(password.value.length < 8){
-        messages.push('hasło musi zawierać więcej niż 8 znaków');
+        messages.push('Hasło musi zawierać więcej niż 8 znaków!');
     }else if(password.value.length > 30){
-        messages.push('przekroczono limit znaków w polu Hasło - max 30');
+        messages.push('Przekroczono limit znaków w polu Hasło - max 30!');
     }
 
     if (messages.length > 0) {
