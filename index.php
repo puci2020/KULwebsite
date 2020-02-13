@@ -45,10 +45,16 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
+            <h5><b>Ważne!</b></h5>
+            <p>*Na opłatę czekamy do 30 kwietenia, po tym czasie koszt wzięcia w wydarzeniu wzrasta do 170zł</p>
+            <div class="line"></div>
+            <h5><b>Dane do przelewu:</b></h5>
+            <b>Nazwa odbiorcy:</b>
+            <p>Fundacja Rozwoju KUL</p>
             <b>Numer rachunku: </b>
-            <p>00 1111 2222 3333 4455 5566 6677</p>
+            <p>03 1050 1953 1000 0090 3079 8087</p>
             <b>Tytuł przelewu: </b>
-            <p>Zjazd absolwentów adres Email</p>
+            <p>Zjazd absolwentów 2020</p>
         </div>
     </div>
 
@@ -64,11 +70,23 @@
                 <div class="boxes-content">
                     <p>KIEDY</p>
                     Zjazd odbędzie się 27-28 czerwca 2020<br>
-                    Rejestracja uczestników rusza o 9:00<br>
-                    Planowane rozpoczęcie wydarzenia o 12:00
+                    Rejestracja uczestników rusza o 9:00 w Gmachu Głównym<br>
+                    Planowane rozpoczęcie wydarzenia o 12:30
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+                <div class="boxes-icon">
+                    <img src="img/money.png">
+                </div>
+                <div class="boxes-content">
+                    <p>KOSZT</p>
+                    Koszt wzięcia udziału to 150zł*<br>
+                    Prosimy przelać kwotę na rachunek bankowy<br>
+                    Więcej informacji odnośnie płatności znajdziesz klikając <a href="#sec-1" id="popup"> tutaj</a>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up" data-aos-once="true">
                 <div class="boxes-icon">
                     <img src="img/place.png">
                 </div>
@@ -77,18 +95,6 @@
                     Widzimy się w Gmachu Głównym KUL<br>
                     Al. Racławickie 14<br>
                     20-950 Lublin
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up" data-aos-once="true">
-                <div class="boxes-icon">
-                    <img src="img/money.png">
-                </div>
-                <div class="boxes-content">
-                    <p>KOSZT</p>
-                    Koszt wzięcia udziału to 150zł<br>
-                    Prosimy przelać kwotę na rachunek bankowy<br>
-                    Informację dotyczące przelewu znajdziesz klikając <a href="#sec-1" id="popup"> tutaj</a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 boxes" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
@@ -103,7 +109,8 @@
             </div>
             <div class="space"></div>
             <div class="space button">
-                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up" data-aos-delay="500" data-aos-once="true">ZAPISZ
+                <a class="btn btn-outline-light btn-lg animated" href="#sec-2" data-aos="flip-up" data-aos-delay="500"
+                   data-aos-once="true">ZAPISZ
                     SIĘ JUŻ
                     TERAZ!</a>
             </div>
@@ -120,40 +127,48 @@
             <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-once="true">
                 <a href="img/gallery-link/1.jpg" data-lightbox="mygallery"> <img src="img/gallery-small/1.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200"
+                 data-aos-once="true">
                 <a href="img/gallery-link/2.jpg" data-lightbox="mygallery"><img src="img/gallery-small/2.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300" data-aos-once="true">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300"
+                 data-aos-once="true">
                 <a href="img/gallery-link/3.jpg" data-lightbox="mygallery"><img src="img/gallery-small/3.jpg"></a>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-once="true">
                 <a href="img/gallery-link/4.jpg" data-lightbox="mygallery"> <img src="img/gallery-small/4.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200"
+                 data-aos-once="true">
                 <a href="img/gallery-link/5.jpg" data-lightbox="mygallery"><img src="img/gallery-small/5.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300" data-aos-once="true">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300"
+                 data-aos-once="true">
                 <a href="img/gallery-link/6.jpg" data-lightbox="mygallery"><img src="img/gallery-small/6.jpg"></a>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-once="true">
                 <a href="img/gallery-link/7.jpg" data-lightbox="mygallery"><img src="img/gallery-small/7.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200"
+                 data-aos-once="true">
                 <a href="img/gallery-link/8.jpg" data-lightbox="mygallery"><img src="img/gallery-small/8.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300" data-aos-once="true">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300"
+                 data-aos-once="true">
                 <a href="img/gallery-link/9.jpg" data-lightbox="mygallery"><img src="img/gallery-small/9.jpg"></a>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-once="true">
                 <a href="img/gallery-link/10.jpg" data-lightbox="mygallery"><img src="img/gallery-small/10.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="200"
+                 data-aos-once="true">
                 <a href="img/gallery-link/11.jpg" data-lightbox="mygallery"><img src="img/gallery-small/11.jpg"></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300" data-aos-once="true">
+            <div class="col-sm-12 col-md-6 col-lg-4 boxes-img" data-aos="flip-left" data-aos-delay="300"
+                 data-aos-once="true">
                 <a href="img/gallery-link/12.jpg" data-lightbox="mygallery"><img src="img/gallery-small/12.jpg"></a>
             </div>
         </div>
@@ -186,12 +201,41 @@
             <div class="group">
                 <label>Dieta</label>
                 <div class="radio-group">
-                    <input type="radio" name="food" id="food1" value="Mięsna">
-                    <label for="food1">Mięsna</label>
+                    <input type="radio" name="food" id="food1" value="Standardowa">
+                    <label for="food1">Standardowa</label>
                 </div>
                 <div class="radio-group">
                     <input type="radio" name="food" id="food2" value="Wegetariańska">
                     <label for="food2">Wegetariańska</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="food" id="food3" value="Wegańska">
+                    <label for="food3">Wegańska</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="food" id="food4" value="Bezglutenowa">
+                    <label for="food4">Bezglutenowa</label>
+                </div>
+            </div>
+            <div class="group">
+                <label>Czy jesteś osobą niepełnosprawną</label>
+                <div class="radio-group">
+                    <input type="radio" name="food" id="food12" onclick="hideOptions1()" value="Standardowa">
+                    <label for="food1">Nie</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="food" id="food22" onclick="showOptions1()" value="Wegetariańska">
+                    <label for="food2">Tak</label>
+                </div>
+                <div class="group" id="care">
+                    <div class="radio-group">
+                        <input type="radio" name="food" id="food10" value="Standardowa">
+                        <label for="food1">Nie</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="food" id="food11" value="Standardowa">
+                        <label for="food1">Nie</label>
+                    </div>
                 </div>
             </div>
             <input type="submit" name="submit" id="submit" value="Zapisz">

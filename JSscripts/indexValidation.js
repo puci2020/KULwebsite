@@ -38,8 +38,17 @@ const email = document.getElementById('email');
 const year = document.getElementById('year');
 const food1 = document.getElementById('food1');
 const food2 = document.getElementById('food2');
+const care = document.getElementById('care');
 const rejForm = document.getElementById('form');
 const errorElement = document.getElementById('error');
+
+function showOptions1(){
+        care.style.display = "block";
+}
+
+function hideOptions1(){
+    care.style.display = "none";
+}
 
 rejForm.addEventListener('submit', (e) => {
     let messages = [];
@@ -65,6 +74,10 @@ rejForm.addEventListener('submit', (e) => {
     if (food1.checked == false && food2.checked == false) {
         messages.push('Wybierz rodzaj diety');
     }
+
+    // if(food2.checked == true){
+    //     otherDiet.style.display = "block";
+    // }
 
 
     if (messages.length > 0) {
