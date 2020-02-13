@@ -36,8 +36,11 @@ const firstName = document.getElementById('firstName');
 const lastName = document.getElementById('lastName');
 const email = document.getElementById('email');
 const year = document.getElementById('year');
-const food1 = document.getElementById('food1');
-const food2 = document.getElementById('food2');
+const check1 = document.getElementById('check1');
+const check2 = document.getElementById('check2');
+const check3 = document.getElementById('check3');
+const check4 = document.getElementById('check4');
+const rodo = document.getElementById('rodo');
 const care = document.getElementById('care');
 const rejForm = document.getElementById('form');
 const errorElement = document.getElementById('error');
@@ -63,22 +66,27 @@ rejForm.addEventListener('submit', (e) => {
 
     if (email.value === '' || email.value == null) {
         messages.push('Pole Email nie może pozostać puste');
-    } else if (emailIsValid(email.value) == false) {
+    } else if (emailIsValid(email.value) === false) {
         messages.push('Zły format adresu email')
     }
 
-    if (year.value == '') {
+    if (year.value === '') {
         messages.push('Pole Rocznik nie może pozostać puste')
     }
 
-    if (food1.checked == false && food2.checked == false) {
-        messages.push('Wybierz rodzaj diety');
+    if(check1.checked === false && check2.checked === false){
+        messages.push('Zaznacz czy jesteś osobą niepełnosprawną')
     }
 
-    // if(food2.checked == true){
-    //     otherDiet.style.display = "block";
-    // }
+    if(check2.checked === true){
+        if(check3.checked === false && check4.checked === false){
+            messages.push('Zaznacz czy potrzebujesz osoby do pomocy')
+        }
+    }
 
+    if (rodo.checked === false){
+        messages.push('Musisz zaakceptować klauzule RODO')
+    }
 
     if (messages.length > 0) {
         e.preventDefault();
@@ -101,7 +109,7 @@ span.onclick = function() {
 };
 
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target === modal) {
         modal.style.display = "none";
     }
 };

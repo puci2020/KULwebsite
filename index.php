@@ -20,26 +20,27 @@
 <body onload="selectGenerate()">
 
 <div class="first">
-</div>
 
-<div class="caption text-center col">
-    <div class="errorForm">
-        <?php
-        $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-        if (strpos($fullUrl, "registrationSC=exist") == true) {
-            echo "<div class='alert alert-danger' id='alertForm'>Podany email został już zarejestrowany w bazie!</div>";
-        } else
-            if (strpos($fullUrl, "registrationSC=success") == true) {
-                echo "<div class='alert alert-success' id='alertForm'>Rejestracja zakończona sukcesem!</div>";
-            }
-        ?>
+
+    <div class="caption text-center col">
+        <div class="errorForm">
+            <?php
+            $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+            if (strpos($fullUrl, "registrationSC=exist") == true) {
+                echo "<div class='alert alert-danger' id='alertForm'>Podany email został już zarejestrowany w bazie!</div>";
+            } else
+                if (strpos($fullUrl, "registrationSC=success") == true) {
+                    echo "<div class='alert alert-success' id='alertForm'>Rejestracja zakończona sukcesem! Prosimy o wniesienie opłaty na podany numer konta do 30 kwietnia. Informacje dotyczące przelewu znajdzesz w sekcji KOSZT klikając w link
+                       </div>";
+                }
+            ?>
+        </div>
+        <h2 class="animated">II ZJAZD ABSOLWENTÓW</h2>
+        <h1 class="animated">PSYCHOLOGII</h1>
+        <h3 class="animated">KATOLICKIEGO UNIWERSYSYTETU LUBELSKIEGO</h3>
+        <a class="btn btn-outline-light btn-lg animated" href="#sec-1">WIĘCEJ INFORMACJI</a>
     </div>
-    <h2 class="animated">II ZJAZD ABSOLWENTÓW</h2>
-    <h1 class="animated">PSYCHOLOGII</h1>
-    <h3 class="animated">KATOLICKIEGO UNIWERSYSYTETU LUBELSKIEGO</h3>
-    <a class="btn btn-outline-light btn-lg animated" href="#sec-1">WIĘCEJ INFORMACJI</a>
 </div>
-
 <div class="content" id="sec-1">
 
     <div id="myModal" class="modal">
@@ -200,43 +201,43 @@
             </div>
             <div class="group">
                 <label>Dieta</label>
-                <div class="radio-group">
-                    <input type="radio" name="food" id="food1" value="Standardowa">
-                    <label for="food1">Standardowa</label>
-                </div>
-                <div class="radio-group">
-                    <input type="radio" name="food" id="food2" value="Wegetariańska">
-                    <label for="food2">Wegetariańska</label>
-                </div>
-                <div class="radio-group">
-                    <input type="radio" name="food" id="food3" value="Wegańska">
-                    <label for="food3">Wegańska</label>
-                </div>
-                <div class="radio-group">
-                    <input type="radio" name="food" id="food4" value="Bezglutenowa">
-                    <label for="food4">Bezglutenowa</label>
-                </div>
+                <select id="diet" name="Dieta" required
+                        oninvalid="setCustomValidity('Pole Dieta nie może pozostać puste')"
+                        onchange="setCustomValidity('')">
+                    <option value='' disabled selected>Wybierz rodzaj diety</option>
+                    <option value='1'>Standardowa</option>
+                    <option value='2'>Wegetariańska</option>
+                    <option value='3'>Wegańska</option>
+                    <option value='4'>Bezglutenowa</option>
+                </select>
             </div>
             <div class="group">
-                <label>Czy jesteś osobą niepełnosprawną</label>
-                <div class="radio-group">
-                    <input type="radio" name="food" id="food12" onclick="hideOptions1()" value="Standardowa">
-                    <label for="food1">Nie</label>
-                </div>
-                <div class="radio-group">
-                    <input type="radio" name="food" id="food22" onclick="showOptions1()" value="Wegetariańska">
-                    <label for="food2">Tak</label>
+                <div class="group" id="radio">
+                    <label>Czy jesteś osobą niepełnosprawną</label>
+                    <div class="radio-group">
+                        <input type="radio" name="check" id="check1" onclick="hideOptions1()" value="Standardowa">
+                        <label for="check1">Nie</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="check" id="check2" onclick="showOptions1()" value="Wegetariańska">
+                        <label for="check2">Tak</label>
+                    </div>
                 </div>
                 <div class="group" id="care">
+                    <label>Czy potrzebujesz opiekuna/wolontariusza na czas zjazdu</label>
                     <div class="radio-group">
-                        <input type="radio" name="food" id="food10" value="Standardowa">
-                        <label for="food1">Nie</label>
+                        <input type="radio" name="check0" id="check3" value="Standardowa">
+                        <label for="check3">Nie</label>
                     </div>
                     <div class="radio-group">
-                        <input type="radio" name="food" id="food11" value="Standardowa">
-                        <label for="food1">Nie</label>
+                        <input type="radio" name="check0" id="check4" value="Standardowa">
+                        <label for="check4">Tak</label>
                     </div>
                 </div>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="rodo" id="rodo">
+                <span>Zgadzam się</span>
             </div>
             <input type="submit" name="submit" id="submit" value="Zapisz">
         </form>
