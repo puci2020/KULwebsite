@@ -45,7 +45,7 @@
 
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" id="close">&times;</span>
             <h5><b>Ważne!</b></h5>
             <p>*Na opłatę czekamy do 30 kwietenia, po tym czasie koszt wzięcia w wydarzeniu wzrasta do 170zł</p>
             <div class="line"></div>
@@ -177,6 +177,13 @@
 </div>
 
 <div class="first secound" id="sec-2">
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close2">&times;</span>
+            <h5><b>Ważne!</b></h5>
+
+        </div>
+    </div>
     <div class="form-box">
         <h2>Zapisz się</h2>
         <form method="post" id="form" action="PHPscripts/registrationSC.php">
@@ -237,7 +244,7 @@
             </div>
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" name="rodo" id="rodo">
-                <span>Zgadzam się</span>
+                <span>Zgadzam się<a href="#sec-2" id="popup2"> tutaj</a></span>
             </div>
             <input type="submit" name="submit" id="submit" value="Zapisz">
         </form>
