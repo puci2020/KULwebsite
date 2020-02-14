@@ -192,6 +192,10 @@ body::-webkit-scrollbar {
   margin: 10px 0;
   border-radius: 10px;
 }
+.form-box a {
+  text-decoration: underline;
+  color: white;
+}
 .form-box h2 {
   text-align: center;
 }

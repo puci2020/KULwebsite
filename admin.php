@@ -56,7 +56,7 @@ if(isset($_GET['delete'])){
 </nav>
 
 <main>
-    <div class="container">
+    <div class="wrapper">
         <div class="alert alert-danger alert-dismissible" id="message">
             <div id="error"></div>
             <a href="#" class="close" onclick="closeMsg()" aria-label="close">&times;</a>
@@ -90,6 +90,8 @@ if(isset($_GET['delete'])){
                     <th scope="col">Email</th>
                     <th scope="col">Rocznik</th>
                     <th scope="col">Dieta</th>
+                    <th scope="col">Niepełnosprawna</th>
+                    <th scope="col">Potrzebny<br> opiekun</th>
                     <th scope="col">Opłata</th>
                     <th scope="col">Akcje</th>
                 </tr>
@@ -108,6 +110,8 @@ if(isset($_GET['delete'])){
                     $email = $row['email'];
                     $year = $row['year'];
                     $diet = $row['diet'];
+                    $disabled = $row['disabled'];
+                    $care = $row['care'];
                     $payment = $row['payment'];
 
                     ?>
@@ -118,19 +122,21 @@ if(isset($_GET['delete'])){
                         <td><?php echo $email?></td>
                         <td><?php echo $year?></td>
                         <td><?php echo $diet?></td>
+                        <td><?php echo $disabled?></td>
+                        <td><?php echo $care?></td>
                         <td><?php echo $payment?></td>
                         <td>
                             <a href="admin.php?edit=<?php echo $id; ?>" class="btn btn-success">Zapłacono</a>
                             <a href="admin.php?delete=<?php echo $id; ?>" class="btn btn-danger">Nie zapłacono</a>
                         </td>
                     </tr>
-                    <script>changeColor("pay")</script>
                 <?php
                 }
                 ?>
                 </tbody>
             </table>
         </div>
+    </div>
 </main>
 
 </body>

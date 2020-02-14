@@ -180,8 +180,16 @@
     <div id="myModal2" class="modal">
         <div class="modal-content">
             <span class="close" id="close2">&times;</span>
-            <h5><b>Ważne!</b></h5>
-
+            <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do organizacji i realizacji
+                II Zjazdu Absolwentów Psychologii KUL 2020 (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych
+                (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z
+                dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w
+                sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).
+                Dane osobowe będą przetwarzane wyłącznie w celu organizacji i przeprowadzenia Zjazdu.
+                Dane nie będą udostępniane odbiorcom danych w rozumieniu art. 7 pkt 6 ustawy o ochronie danych osobowych.
+                Osobie, której dane dotyczą, przysługuje prawo dostępu do treści jej danych oraz możliwość ich poprawiania.
+                Podanie danych osobowych jest dobrowolne, przy czym odmowa ich podania jest równoznaczna z brakiem możliwości
+                uczestniczenia w procesie rejestracyjnym na ww. Zjazd a tym samym uczestnictwa w nim. </p>
         </div>
     </div>
     <div class="form-box">
@@ -212,39 +220,39 @@
                         oninvalid="setCustomValidity('Pole Dieta nie może pozostać puste')"
                         onchange="setCustomValidity('')">
                     <option value='' disabled selected>Wybierz rodzaj diety</option>
-                    <option value='1'>Standardowa</option>
-                    <option value='2'>Wegetariańska</option>
-                    <option value='3'>Wegańska</option>
-                    <option value='4'>Bezglutenowa</option>
+                    <option value='Standardowa'>Standardowa</option>
+                    <option value='Wegetariańska'>Wegetariańska</option>
+                    <option value='Wegańska'>Wegańska</option>
+                    <option value='Bezglutenowa'>Bezglutenowa</option>
                 </select>
             </div>
             <div class="group">
                 <div class="group" id="radio">
                     <label>Czy jesteś osobą niepełnosprawną</label>
                     <div class="radio-group">
-                        <input type="radio" name="check" id="check1" onclick="hideOptions1()" value="Standardowa">
+                        <input type="radio" name="check" id="check1" onclick="hideOptions1()" value="Nie">
                         <label for="check1">Nie</label>
                     </div>
                     <div class="radio-group">
-                        <input type="radio" name="check" id="check2" onclick="showOptions1()" value="Wegetariańska">
+                        <input type="radio" name="check" id="check2" onclick="showOptions1()" value="Tak">
                         <label for="check2">Tak</label>
                     </div>
                 </div>
                 <div class="group" id="care">
                     <label>Czy potrzebujesz opiekuna/wolontariusza na czas zjazdu</label>
                     <div class="radio-group">
-                        <input type="radio" name="check0" id="check3" value="Standardowa">
+                        <input type="radio" name="checkC" id="check3" value="Nie">
                         <label for="check3">Nie</label>
                     </div>
                     <div class="radio-group">
-                        <input type="radio" name="check0" id="check4" value="Standardowa">
+                        <input type="radio" name="checkC" id="check4" value="Tak">
                         <label for="check4">Tak</label>
                     </div>
                 </div>
             </div>
             <div class="form-check">
-                <input type="checkbox" class="form-check-input" name="rodo" id="rodo">
-                <span>Zgadzam się<a href="#sec-2" id="popup2"> tutaj</a></span>
+                <input type="checkbox" class="form-check-input" name="rodo" id="rodo" value="Zgadzam się">
+                <span>Zapoznałem się z <a href="#sec-2" id="popup2">informacją o przetwarzaniu danych </a></span>
             </div>
             <input type="submit" name="submit" id="submit" value="Zapisz">
         </form>

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montsrrat", sans-serif;
+  font-size: 0.9rem;
 }
 
 body {
@@ -22,6 +23,15 @@ main {
 
 #message, #message2 {
   display: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+.card {
+  width: 100%;
 }
 
 .card-body {
