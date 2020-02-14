@@ -181,14 +181,20 @@
         <div class="modal-content">
             <span class="close" id="close2">&times;</span>
             <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do organizacji i realizacji
-                II Zjazdu Absolwentów Psychologii KUL 2020 (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych
-                (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z
-                dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w
-                sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).
-                Dane osobowe będą przetwarzane wyłącznie w celu organizacji i przeprowadzenia Zjazdu.
-                Dane nie będą udostępniane odbiorcom danych w rozumieniu art. 7 pkt 6 ustawy o ochronie danych osobowych.
-                Osobie, której dane dotyczą, przysługuje prawo dostępu do treści jej danych oraz możliwość ich poprawiania.
-                Podanie danych osobowych jest dobrowolne, przy czym odmowa ich podania jest równoznaczna z brakiem możliwości
+                II Zjazdu Absolwentów Psychologii KUL 2020 (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych
+                osobowych
+                (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE)
+                2016/679 z
+                dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i
+                w
+                sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).</p>
+            <p>Dane osobowe będą przetwarzane wyłącznie w celu organizacji i przeprowadzenia Zjazdu.
+                Dane nie będą udostępniane odbiorcom danych w rozumieniu art. 7 pkt 6 ustawy o ochronie danych
+                osobowych.
+                Osobie, której dane dotyczą, przysługuje prawo dostępu do treści jej danych oraz możliwość ich
+                poprawiania.
+                Podanie danych osobowych jest dobrowolne, przy czym odmowa ich podania jest równoznaczna z brakiem
+                możliwości
                 uczestniczenia w procesie rejestracyjnym na ww. Zjazd a tym samym uczestnictwa w nim. </p>
         </div>
     </div>
