@@ -2,6 +2,6 @@
 
 session_start();
 
-$connect = new mysqli('localhost', 'root', '', 'zjazd');
+$connect = new mysqli('localhost', 'root', '', 'absolwent');
 
 ?>
