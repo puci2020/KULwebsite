@@ -37,7 +37,7 @@
         </div>
         <h2 class="animated">II ZJAZD ABSOLWENTÓW</h2>
         <h1 class="animated">PSYCHOLOGII</h1>
-        <h3 class="animated">KATOLICKIEGO UNIWERSYSYTETU LUBELSKIEGO</h3>
+        <h3 class="animated">KATOLICKIEGO UNIWERSYTETU LUBELSKIEGO</h3>
         <a class="btn btn-outline-light btn-lg animated" href="#sec-1">WIĘCEJ INFORMACJI</a>
     </div>
 </div>
@@ -47,7 +47,7 @@
         <div class="modal-content">
             <span class="close" id="close">&times;</span>
             <h5><b>Ważne!</b></h5>
-            <p>*Na opłatę czekamy do 30 kwietenia, po tym czasie koszt wzięcia w wydarzeniu wzrasta do 170zł</p>
+            <p>*Na opłatę czekamy do 30 kwietnia, po tym czasie koszt wzięcia udziału w wydarzeniu wzrasta do 170zł</p>
             <div class="line"></div>
             <h5><b>Dane do przelewu:</b></h5>
             <b>Nazwa odbiorcy:</b>
@@ -236,23 +236,23 @@
                 <div class="group" id="radio">
                     <label>Czy jesteś osobą niepełnosprawną</label>
                     <div class="radio-group">
-                        <input type="radio" name="check" id="check1" onclick="hideOptions1()" value="Nie">
-                        <label for="check1">Nie</label>
-                    </div>
-                    <div class="radio-group">
                         <input type="radio" name="check" id="check2" onclick="showOptions1()" value="Tak">
                         <label for="check2">Tak</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="check" id="check1" onclick="hideOptions1()" value="Nie">
+                        <label for="check1">Nie</label>
                     </div>
                 </div>
                 <div class="group" id="care">
                     <label>Czy potrzebujesz opiekuna/wolontariusza na czas zjazdu</label>
                     <div class="radio-group">
-                        <input type="radio" name="checkC" id="check3" value="Nie">
-                        <label for="check3">Nie</label>
-                    </div>
-                    <div class="radio-group">
                         <input type="radio" name="checkC" id="check4" value="Tak">
                         <label for="check4">Tak</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="checkC" id="check3" value="Nie">
+                        <label for="check3">Nie</label>
                     </div>
                 </div>
             </div>

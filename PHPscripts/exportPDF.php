@@ -11,8 +11,8 @@ if (isset($_POST['exportPDF'])){
 
     $pdf = new tFPDF('l', 'mm', 'A4');
     $pdf -> AddPage();
-    $pdf->AddFont('DejaVu','','DejaVuSansCondensed.ttf',true);
-    $pdf->SetFont('DejaVu','',12);
+    $pdf->AddFont('DejaVu','','DejaVuSans.ttf',true);
+    $pdf->SetFont('DejaVu','',10);
     $pdf -> Cell(7,10,"ID", 1,0,'C');
     $pdf -> Cell(45,10,"Imię", 1,0,'C');
     $pdf -> Cell(45,10,"Nazwisko", 1,0,'C');
