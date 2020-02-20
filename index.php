@@ -38,6 +38,7 @@
         <h2 class="animated">II ZJAZD ABSOLWENTÓW</h2>
         <h1 class="animated">PSYCHOLOGII</h1>
         <h3 class="animated">KATOLICKIEGO UNIWERSYTETU LUBELSKIEGO</h3>
+        <h3 class="animated">27-28 czerwca 2020</h3>
         <a class="btn btn-outline-light btn-lg animated" href="#sec-1">WIĘCEJ INFORMACJI</a>
     </div>
 </div>
