@@ -176,7 +176,41 @@
         </div>
     </div>
 </div>
-
+<div class="content" id="sec-3">
+    <div class="title">
+        <h2>Plan wydarzenia</h2>
+    </div>
+    <div class="container">
+        <div class="row header">27 czerwca</div>
+        <div class="row item">
+                <div class="plan-hour">9:00 - 10:00</div>
+                <div class="plan-desc">Rejestracja</div>
+        </div>
+        <div class="row item">
+            <div class="plan-hour">9:00 - 10:00</div>
+            <div class="plan-desc">Rejestracja</div>
+        </div>
+        <div class="row item">
+            <div class="plan-hour">9:00 - 10:00</div>
+            <div class="plan-desc">Rejestracja</div>
+        </div>
+        <div class="row item">
+            <div class="plan-hour">9:00 - 10:00</div>
+            <div class="plan-desc">Rejestracja</div>
+        </div>
+        <div class="row item">
+            <div class="plan-hour">9:00 - 10:00</div>
+            <div class="plan-desc">Rejestracja</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row header">28 czerwca</div>
+        <div class="row item">
+            <div class="plan-hour">9:00 - 10:00</div>
+            <div class="plan-desc">Rejestracja</div>
+        </div>
+    </div>
+</div>
 <div class="first secound" id="sec-2">
     <div id="myModal2" class="modal">
         <div class="modal-content">
