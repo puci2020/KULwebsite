@@ -4,9 +4,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/lightbox.min.css">
     <meta charset="UTF-8"/>
@@ -17,10 +15,8 @@
     <title>Zjazd absolwentów</title>
 </head>
 <body onload="selectGenerate()">
-
 <div class="first">
 </div>
-
 <div class="caption text-center col">
     <div class="errorForm">
         <?php
@@ -40,9 +36,7 @@
     <h3>27-28 czerwca 2020</h3>
     <a class="btn btn-outline-light btn-lg" href="#sec-1">WIĘCEJ INFORMACJI</a>
 </div>
-
 <div class="content" id="sec-1">
-
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" id="close">&times;</span>
@@ -59,7 +53,6 @@
             <p>Zjazd absolwentów 2020</p>
         </div>
     </div>
-
     <div class="title">
         <h2>Najważniejsze informacje</h2>
     </div>
