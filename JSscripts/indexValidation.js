@@ -1,6 +1,6 @@
 function selectGenerate() {
 
-    var optionField = "<option value='' disabled selected>Wybierz rocznik</option>";
+    var optionField = "<option value='' disabled selected>Wybierz rok</option>";
 
     for (var i = 1950; i < 2020; i++) {
         optionField += "<option value='" + i + "'>" + i + "</option>"

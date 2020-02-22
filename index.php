@@ -7,7 +7,6 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="style/animations.css"/>
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/lightbox.min.css">
     <meta charset="UTF-8"/>
@@ -20,35 +19,36 @@
 <body onload="selectGenerate()">
 
 <div class="first">
-
-
-    <div class="caption text-center col">
-        <div class="errorForm">
-            <?php
-            $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-            if (strpos($fullUrl, "registrationSC=exist") == true) {
-                echo "<div class='alert alert-danger' id='alertForm'>Podany email został już zarejestrowany w bazie!</div>";
-            } else
-                if (strpos($fullUrl, "registrationSC=success") == true) {
-                    echo "<div class='alert alert-success' id='alertForm'>Rejestracja zakończona sukcesem! Prosimy o wniesienie opłaty na podany numer konta do 30 kwietnia. Informacje dotyczące przelewu znajdzesz w sekcji KOSZT klikając w link
-                       </div>";
-                }
-            ?>
-        </div>
-        <h2 class="animated">II ZJAZD ABSOLWENTÓW</h2>
-        <h1 class="animated">PSYCHOLOGII</h1>
-        <h3 class="animated">KATOLICKIEGO UNIWERSYTETU LUBELSKIEGO</h3>
-        <h3 class="animated">27-28 czerwca 2020</h3>
-        <a class="btn btn-outline-light btn-lg animated" href="#sec-1">WIĘCEJ INFORMACJI</a>
-    </div>
 </div>
+
+<div class="caption text-center col">
+    <div class="errorForm">
+        <?php
+        $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        if (strpos($fullUrl, "registrationSC=exist") == true) {
+            echo "<div class='alert alert-danger' id='alertForm'>Podany email został już zarejestrowany w bazie!</div>";
+        } else
+            if (strpos($fullUrl, "registrationSC=success") == true) {
+                echo "<div class='alert alert-success' id='alertForm'>Rejestracja zakończona sukcesem! Prosimy o wniesienie opłaty na podany numer konta do 30 kwietnia. Informacje dotyczące przelewu znajdzesz w sekcji KOSZT klikając w link
+                       </div>";
+            }
+        ?>
+    </div>
+    <h2>II ZJAZD ABSOLWENTÓW</h2>
+    <h1>PSYCHOLOGII</h1>
+    <h3>KATOLICKIEGO UNIWERSYTETU LUBELSKIEGO</h3>
+    <h3>27-28 czerwca 2020</h3>
+    <a class="btn btn-outline-light btn-lg" href="#sec-1">WIĘCEJ INFORMACJI</a>
+</div>
+
 <div class="content" id="sec-1">
 
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" id="close">&times;</span>
             <h5><b>Ważne!</b></h5>
-            <p>*Na opłatę czekamy do 30 kwietnia, po tym czasie koszt wzięcia udziału w wydarzeniu wzrasta do 170zł</p>
+            <p>*Na opłatę czekamy do 30 kwietnia, po tym czasie koszt wzięcia udziału w wydarzeniu wzrasta do 170zł.</p>
+            <p>*Koszt nie obejmuje noclegu!</p>
             <div class="line"></div>
             <h5><b>Dane do przelewu:</b></h5>
             <b>Nazwa odbiorcy:</b>
@@ -178,39 +178,40 @@
 </div>
 <div class="content" id="sec-3">
     <div class="title">
-        <h2>Plan wydarzenia</h2>
+        <h2>Program wydarzenia</h2>
+        <h4>Szczegółowy program udostępnimy wkrótce</h4>
     </div>
-    <div class="container" data-aos="fade-up" data-aos-once="true">
-        <div class="row header">27 czerwca</div>
-        <div class="row item">
-                <div class="plan-hour">9:00 - 10:00</div>
-                <div class="plan-desc">Rejestracja</div>
-        </div>
-        <div class="row item">
-            <div class="plan-hour">9:00 - 10:00</div>
-            <div class="plan-desc">Rejestracja</div>
-        </div>
-        <div class="row item">
-            <div class="plan-hour">9:00 - 10:00</div>
-            <div class="plan-desc">Rejestracja</div>
-        </div>
-        <div class="row item">
-            <div class="plan-hour">9:00 - 10:00</div>
-            <div class="plan-desc">Rejestracja</div>
-        </div>
-        <div class="row item">
-            <div class="plan-hour">9:00 - 10:00</div>
-            <div class="plan-desc">Rejestracja</div>
-        </div>
-    </div>
-    <div class="container" data-aos="flip-up" data-aos-delay="300"
-         data-aos-once="true">
-        <div class="row header">28 czerwca</div>
-        <div class="row item">
-            <div class="plan-hour">9:00 - 10:00</div>
-            <div class="plan-desc">Rejestracja</div>
-        </div>
-    </div>
+    <!--    <div class="container" data-aos="fade-up" data-aos-once="true">-->
+    <!--        <div class="row header">27 czerwca</div>-->
+    <!--        <div class="row item">-->
+    <!--                <div class="plan-hour">9:00 - 10:00</div>-->
+    <!--                <div class="plan-desc">Rejestracja</div>-->
+    <!--        </div>-->
+    <!--        <div class="row item">-->
+    <!--            <div class="plan-hour">9:00 - 10:00</div>-->
+    <!--            <div class="plan-desc">Rejestracja</div>-->
+    <!--        </div>-->
+    <!--        <div class="row item">-->
+    <!--            <div class="plan-hour">9:00 - 10:00</div>-->
+    <!--            <div class="plan-desc">Rejestracja</div>-->
+    <!--        </div>-->
+    <!--        <div class="row item">-->
+    <!--            <div class="plan-hour">9:00 - 10:00</div>-->
+    <!--            <div class="plan-desc">Rejestracja</div>-->
+    <!--        </div>-->
+    <!--        <div class="row item">-->
+    <!--            <div class="plan-hour">9:00 - 10:00</div>-->
+    <!--            <div class="plan-desc">Rejestracja</div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="container" data-aos="flip-up" data-aos-delay="300"-->
+    <!--         data-aos-once="true">-->
+    <!--        <div class="row header">28 czerwca</div>-->
+    <!--        <div class="row item">-->
+    <!--            <div class="plan-hour">9:00 - 10:00</div>-->
+    <!--            <div class="plan-desc">Rejestracja</div>-->
+    <!--        </div>-->
+    <!--    </div>-->
 </div>
 <div class="first secound" id="sec-2">
     <div id="myModal2" class="modal">
@@ -234,6 +235,7 @@
                 uczestniczenia w procesie rejestracyjnym na ww. Zjazd a tym samym uczestnictwa w nim. </p>
         </div>
     </div>
+
     <div class="form-box">
         <h2>Zapisz się</h2>
         <form method="post" id="form" action="PHPscripts/registrationSC.php">
@@ -250,7 +252,7 @@
                 <input type="text" name="email" id="email" placeholder="Podaj email">
             </div>
             <div class="group">
-                <label>Rocznik</label>
+                <label>Rok ukończenia studiów</label>
                 <select id="year" name="Rocznik" required
                         oninvalid="setCustomValidity('Pole Rocznik nie może pozostać puste')"
                         onchange="setCustomValidity('')">
@@ -270,7 +272,7 @@
             </div>
             <div class="group">
                 <div class="group" id="radio">
-                    <label>Czy jesteś osobą niepełnosprawną</label>
+                    <label>Osoba z niepełnosprawnością</label>
                     <div class="radio-group">
                         <input type="radio" name="check" id="check2" onclick="showOptions1()" value="Tak">
                         <label for="check2">Tak</label>
