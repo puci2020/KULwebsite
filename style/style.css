@@ -405,10 +405,6 @@ select option:checked {
     transform: none;
   }
 
-  .caption h1, .caption h2, .caption h3, .caption .btn {
-    animation: none;
-  }
-
   #sec-3 .item {
     margin-left: 10px;
     margin-right: 10px;
