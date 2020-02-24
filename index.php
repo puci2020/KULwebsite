@@ -296,16 +296,27 @@
     </div>
 </div>
 <div class="footer">
-    <img src="img/absolwenciKUL.jpg" id="absolwent">
-    <img src="img/tpkul.jpg" id="tp">
-    <img src="img/fundacja.jpg">
+    <img src="img/absolwentkul.jpg" id="absolwent" alt="absolwent_kul">
+    <img src="img/tpkul.jpg" id="tp" alt="towarzystwo_przyjaciol_kul">
+    <img src="img/fundacjakul.jpg" alt="fundacja_rozwoju_kul">
     <div class="author"> Adam Pucicki © 2020 All rights reserved.</div>
 </div>
 <div class="scrollTop">
     <button onclick="topFunction()" id="myBtn" title="Wróć na górę"><img src="img/up-arrow.png"></button>
 </div>
 </body>
-</html>
+
+
+<div id="simplecookienotification_v01" style="display: block; z-index: 99999; min-height: 35px; width: 100%; position: fixed; background: rgb(43, 54, 67); border-image: initial; border-top: 1px solid rgb(160, 178, 192); text-align: center; color: rgb(119, 119, 119); bottom: 0px; left: 0px; border-radius: 0px; right: 0px; border-right-color: rgb(160, 178, 192); border-bottom-color: rgb(160, 178, 192); border-left-color: rgb(160, 178, 192);">
+    <div style="padding:10px; margin-left:15px; margin-right:15px; font-size:14px; font-weight:normal;">
+        <span id="simplecookienotification_v01_powiadomienie">Ta strona używa plików cookie w celu usprawnienia i ułatwienia dostępu do serwisu oraz prowadzenia danych statystycznych. Dalsze korzystanie z tej witryny oznacza akceptację tego stanu rzeczy.</span><span id="br_pc_title_html"><br></span>
+        <a id="simplecookienotification_v01_polityka" href="http://jakwylaczyccookie.pl/polityka-cookie/" style="color: rgb(160, 178, 192);">Polityka Prywatności</a><span id="br_pc2_title_html"> &nbsp;&nbsp; </span>
+        <a id="simplecookienotification_v01_info" href="http://jakwylaczyccookie.pl/jak-wylaczyc-pliki-cookies/" style="color: rgb(160, 178, 192);">Jak wyłączyć cookies?</a><span id="br_pc3_title_html"> &nbsp;&nbsp; </span>
+        <a id="simplecookienotification_v01_info2" href="https://nety.pl/cyberbezpieczenstwo" style="color: rgb(160, 178, 192);">Cyberbezpieczeństwo</a><div id="jwc_hr1" style="height: 10px; display: none;"></div>
+        <a id="okbutton" href="javascript:simplecookienotification_v01_create_cookie('simplecookienotification_v01',1,7);" style="position: absolute; background: rgb(160, 178, 192); color: rgb(255, 255, 255); padding: 5px 15px; text-decoration: none; font-size: 12px; font-weight: normal; border: 0px solid rgb(43, 54, 67); border-radius: 5px; top: 5px; right: 5px;">AKCEPTUJĘ</a><div id="jwc_hr2" style="height: 10px; display: none;"></div>
+    </div>
+</div>
+<script type="text/javascript">var galTable= new Array(); var galx = 0;</script><script type="text/javascript">function simplecookienotification_v01_create_cookie(name,value,days) { if (days) { var date = new Date(); date.setTime(date.getTime()+(days*24*60*60*1000)); var expires = "; expires="+date.toGMTString(); } else var expires = ""; document.cookie = name+"="+value+expires+"; path=/"; document.getElementById("simplecookienotification_v01").style.display = "none"; } function simplecookienotification_v01_read_cookie(name) { var nameEQ = name + "="; var ca = document.cookie.split(";"); for(var i=0;i < ca.length;i++) { var c = ca[i]; while (c.charAt(0)==" ") c = c.substring(1,c.length); if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length); }return null;}var simplecookienotification_v01_jest = simplecookienotification_v01_read_cookie("simplecookienotification_v01");if(simplecookienotification_v01_jest==1){ document.getElementById("simplecookienotification_v01").style.display = "none"; }</script></html>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="JSscripts/lightbox-plus-jquery.min.js"></script>
 <script>

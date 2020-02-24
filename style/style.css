@@ -338,8 +338,6 @@ select option:checked {
   overflow: hidden;
 }
 .footer img {
-  width: auto;
-  height: 80px;
   margin-top: 20px;
 }
 .footer #absolwent {
@@ -394,6 +392,9 @@ select option:checked {
 }
 
 @media only screen and (max-width: 375px) {
+  .caption {
+    top: 25vh;
+  }
   .caption h1 {
     font-size: 2.3rem;
   }
