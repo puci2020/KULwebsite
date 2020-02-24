@@ -296,7 +296,10 @@
     </div>
 </div>
 <div class="footer">
-    Adam Pucicki © 2020 All rights reserved.
+    <img src="img/absolwenciKUL.jpg" id="absolwent">
+    <img src="img/tpkul.jpg" id="tp">
+    <img src="img/fundacja.jpg">
+    <div class="author"> Adam Pucicki © 2020 All rights reserved.</div>
 </div>
 <div class="scrollTop">
     <button onclick="topFunction()" id="myBtn" title="Wróć na górę"><img src="img/up-arrow.png"></button>

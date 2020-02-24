@@ -320,16 +320,24 @@ select
     margin-left: 25px
 
 .footer
-  height: 50px
+  height: 150px
   width: 100vw
   clear: both
   background: $footer-bg-color
   color: $footer-text-color
   text-align: center
-  vertical-align: center
   line-height: 50px
   border-top: 1px solid darkblue
   overflow: hidden
+  img
+    width: auto
+    height: 80px
+    margin-top: 20px
+
+  #absolwent
+    margin-right: 60px
+  #tp
+    margin-right: 60px
 
 .modal
   display: none
@@ -384,6 +392,12 @@ select
   .secound
     .form-box
       width: 90%
+  .footer
+    height: auto
+    img
+      margin: 5px 0 0 0
+    #absolwent, #tp
+      margin-right: 0
 
 @media only screen and (max-width: 768px)
   .boxes

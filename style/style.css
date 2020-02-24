@@ -327,16 +327,26 @@ select option:checked {
 }
 
 .footer {
-  height: 50px;
+  height: 150px;
   width: 100vw;
   clear: both;
   background: #222;
   color: #555555;
   text-align: center;
-  vertical-align: center;
   line-height: 50px;
   border-top: 1px solid darkblue;
   overflow: hidden;
+}
+.footer img {
+  width: auto;
+  height: 80px;
+  margin-top: 20px;
+}
+.footer #absolwent {
+  margin-right: 60px;
+}
+.footer #tp {
+  margin-right: 60px;
 }
 
 .modal {
@@ -395,6 +405,16 @@ select option:checked {
 @media only screen and (max-width: 454px) {
   .secound .form-box {
     width: 90%;
+  }
+
+  .footer {
+    height: auto;
+  }
+  .footer img {
+    margin: 5px 0 0 0;
+  }
+  .footer #absolwent, .footer #tp {
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 768px) {
