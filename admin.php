@@ -101,8 +101,6 @@ if(isset($_GET['delete'])){
                 $sql = "select * from graduates";
                 $result = $connect->query($sql);
 
-                $number = 0;
-
                 while ($row = mysqli_fetch_array($result)) {
                     $id = $row['ID_user'];
                     $firstName = $row['first_name'];
