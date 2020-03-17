@@ -33,8 +33,12 @@
     <h2>II ZJAZD ABSOLWENTÓW</h2>
     <h1>PSYCHOLOGII</h1>
     <h3>KATOLICKIEGO UNIWERSYTETU LUBELSKIEGO</h3>
-    <h3>27-28 czerwca 2020</h3>
-    <a class="btn btn-outline-light btn-lg" href="#sec-1">WIĘCEJ INFORMACJI</a>
+<!--    <h3>27-28 czerwca 2020</h3>-->
+    <div class='alert alert-warning' id="epidemia"><h4><p>Szanowni Państwo,</p>
+        <p>W związku z niepewną sytuacją spowodowaną pandemią oraz w trosce o zdrowie nas wszystkich z przykrością informujemy, że II Zjazd Absolwentów Psychologii zostaje w tym roku odwołany. Mamy nadzieję, że nasze wysiłki organizacyjne nie pójdą na marne, a Wasza energia do spotkania zostanie i zobaczymy się cali i zdrowi w czerwcu 2021.</p>
+
+        *Rejestracja zostaje wstrzymana, a tym z Państwa, którzy już dokonali opłaty w najbliższych dniach zwrócimy pieniądze. </h4></div>
+<!--    <a class="btn btn-outline-light btn-lg" href="#sec-1">WIĘCEJ INFORMACJI</a>-->
 </div>
 <div class="content" id="sec-1">
     <div id="myModal" class="modal">
